@@ -1,0 +1,1306 @@
+---------------------------------------------------- beginning of /proc/kmsg
+====================== ULOGCAT SESSION START  ======================
+K 01-01 00:00:00.000 I KERNEL                                       : Booting Linux on physical CPU 0
+K 01-01 00:00:00.000 I KERNEL                                       : Initializing cgroup subsys cpu
+K 01-01 00:00:00.000 N KERNEL                                       : Linux version 3.4.11-02624-g15e22bef7d8 (jenkins@jenkins) (gcc version 4.6.3 (Sourcery CodeBench Lite 2012.03-57) ) #1 SMP PREEMPT Wed Nov 7 16:44:02 UTC 2018
+K 01-01 00:00:00.000 W KERNEL                                       : CPU: ARMv7 Processor [412fc097] revision 7 (ARMv7), cr=10c53c7d
+K 01-01 00:00:00.000 W KERNEL                                       : CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+K 01-01 00:00:00.000 W KERNEL                                       : Machine: Sicilia board
+K 01-01 00:00:00.000 I KERNEL                                       : P7 per device DMA memory regions:
+K 01-01 00:00:00.000 I KERNEL                                       : 	bff00000:bfffffff: ramoops.0
+K 01-01 00:00:00.000 I KERNEL                                       : 	00000000:0797ffff: avicam.0
+K 01-01 00:00:00.000 I KERNEL                                       : 	00000000:00978fff: avicam.2
+K 01-01 00:00:00.000 I KERNEL                                       : 	00000000:00978fff: avicam.3
+K 01-01 00:00:00.000 I KERNEL                                       : 	00000000:00978fff: avicam.4
+K 01-01 00:00:00.000 I KERNEL                                       : 	00000000:00978fff: avicam.5
+K 01-01 00:00:00.000 I KERNEL                                       : 	00000000:071fafff: avi_m2m.0
+K 01-01 00:00:00.000 I KERNEL                                       : 	00000000:0bbfffff: hx280-venc.0
+K 01-01 00:00:00.000 I KERNEL                                       : 	bfe00000:bfefffff: ci_hdrc.0
+K 01-01 00:00:00.000 I KERNEL                                       : 	bfd00000:bfdfffff: ci_hdrc.1
+K 01-01 00:00:00.000 W KERNEL                                       : Memory policy: ECC disabled, Data cache writealloc
+K 01-01 00:00:00.000 D KERNEL                                       : On node 0 totalpages: 143104
+K 01-01 00:00:00.000 D KERNEL                                       : free_area_init_node: node 0, pgdat 80911000, node_mem_map 80ecb000
+K 01-01 00:00:00.000 D KERNEL                                       :   Normal zone: 2048 pages used for memmap
+K 01-01 00:00:00.000 D KERNEL                                       :   Normal zone: 0 pages reserved
+K 01-01 00:00:00.000 D KERNEL                                       :   Normal zone: 141056 pages, LIFO batch:31
+K 01-01 00:00:00.000 I KERNEL                                       : PERCPU: Embedded 8 pages/cpu @816d9000 s12160 r8192 d12416 u32768
+K 01-01 00:00:00.000 D KERNEL                                       : pcpu-alloc: s12160 r8192 d12416 u32768 alloc=8*4096
+K 01-01 00:00:00.000 D KERNEL                                       : pcpu-alloc: [0] 0 [0] 1 
+K 01-01 00:00:00.000 W KERNEL                                       : Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 141056
+K 01-01 00:00:00.000 N KERNEL                                       : Kernel command line:  boxinit.serialno=P742PB2K190000519120  calib=0x001C003E console=ttyPA0,115200 loglevel=8 root=/dev/mmcblk0p4 rootfstype=ext4 rootwait parrot_force_usbd boxinit.debuggable=0 boxinit.application=PA_SICILIA boxinit.plateform=PTA_P7 androidboot.bootloader=rtv-ecos-bootloader-p7-0-39-1-g8f913a6 
+K 01-01 00:00:00.000 I KERNEL                                       : PID hash table entries: 4096 (order: 2, 16384 bytes)
+K 01-01 00:00:00.000 I KERNEL                                       : Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+K 01-01 00:00:00.000 I KERNEL                                       : Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+K 01-01 00:00:00.000 I KERNEL                                       : Memory: 559MB = 559MB total
+K 01-01 00:00:00.000 N KERNEL                                       : Memory: 548108k/548108k available, 500468k reserved, 0K highmem
+K 01-01 00:00:00.000 N KERNEL                                       : Virtual kernel memory layout:
+K 01-01 00:00:00.000 N KERNEL                                       :     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+K 01-01 00:00:00.000 N KERNEL                                       :     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+K 01-01 00:00:00.000 N KERNEL                                       :     vmalloc : 0xc0800000 - 0xff000000   (1000 MB)
+K 01-01 00:00:00.000 N KERNEL                                       :     lowmem  : 0x80000000 - 0xc0000000   (1024 MB)
+K 01-01 00:00:00.000 N KERNEL                                       :     modules : 0x7f000000 - 0x80000000   (  16 MB)
+K 01-01 00:00:00.000 N KERNEL                                       :       .text : 0x80008000 - 0x8085ad90   (8524 kB)
+K 01-01 00:00:00.000 N KERNEL                                       :       .init : 0x8085b000 - 0x80893f80   ( 228 kB)
+K 01-01 00:00:00.000 N KERNEL                                       :       .data : 0x80894000 - 0x809134e0   ( 510 kB)
+K 01-01 00:00:00.000 N KERNEL                                       :        .bss : 0x80913504 - 0x80ecad08   (5855 kB)
+K 01-01 00:00:00.000 I KERNEL                                       : Preemptible hierarchical RCU implementation.
+K 01-01 00:00:00.000 I KERNEL                                       : 	Additional per-CPU info printed with stalls.
+K 01-01 00:00:00.000 I KERNEL                                       : NR_IRQS:202
+K 01-01 00:00:00.000 D KERNEL                                       : p7: IRQ setup
+K 01-01 00:00:00.000 D KERNEL                                       : p7: found Parrot7 chip v3 [0x50373032]
+K 01-01 00:00:00.000 D KERNEL                                       : p7: tick setup
+K 01-01 00:00:00.000 I KERNEL                                       : sched_clock: 32 bits at 97MHz, resolution 10ns, wraps every 44050ms
+K 01-01 00:00:00.000 I KERNEL                                       : Console: colour dummy device 80x30
+K 01-01 00:00:00.000 W KERNEL                                       : Lock dependency validator: Copyright (c) 2006 Red Hat, Inc., Ingo Molnar
+K 01-01 00:00:00.000 W KERNEL                                       : ... MAX_LOCKDEP_SUBCLASSES:  8
+K 01-01 00:00:00.000 W KERNEL                                       : ... MAX_LOCK_DEPTH:          48
+K 01-01 00:00:00.000 W KERNEL                                       : ... MAX_LOCKDEP_KEYS:        8191
+K 01-01 00:00:00.000 W KERNEL                                       : ... CLASSHASH_SIZE:          4096
+K 01-01 00:00:00.000 W KERNEL                                       : ... MAX_LOCKDEP_ENTRIES:     16384
+K 01-01 00:00:00.000 W KERNEL                                       : ... MAX_LOCKDEP_CHAINS:      32768
+K 01-01 00:00:00.000 W KERNEL                                       : ... CHAINHASH_SIZE:          16384
+K 01-01 00:00:00.000 W KERNEL                                       :  memory used by lock dependency info: 3679 kB
+K 01-01 00:00:00.000 W KERNEL                                       :  per task-struct memory footprint: 1152 bytes
+K 01-01 00:00:00.150 I KERNEL                                       : Calibrating delay using timer specific routine.. 1565.30 BogoMIPS (lpj=7826505)
+K 01-01 00:00:00.150 I KERNEL                                       : pid_max: default: 32768 minimum: 301
+K 01-01 00:00:00.152 I KERNEL                                       : Mount-cache hash table entries: 512
+K 01-01 00:00:00.157 I KERNEL                                       : Initializing cgroup subsys debug
+K 01-01 00:00:00.157 I KERNEL                                       : Initializing cgroup subsys cpuacct
+K 01-01 00:00:00.157 I KERNEL                                       : Initializing cgroup subsys freezer
+K 01-01 00:00:00.158 I KERNEL                                       : CPU: Testing write buffer coherency: ok
+K 01-01 00:00:00.160 I KERNEL                                       : CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+K 01-01 00:00:00.160 I KERNEL                                       : hw perfevents: enabled with ARMv7 Cortex-A9 PMU driver, 7 counters available
+K 01-01 00:00:00.160 I KERNEL                                       : Setting up static identity map for 0x805fd558 - 0x805fd5b0
+K 01-01 00:00:00.160 D KERNEL                                       : p7: powering built-in self test off
+K 01-01 00:00:00.160 D KERNEL                                       : p7: setting L2C latencies to tag=00000020 data=00000020.
+K 01-01 00:00:00.161 I KERNEL                                       : L310 cache controller enabled
+K 01-01 00:00:00.161 I KERNEL                                       : l2x0: 16 ways, CACHE_ID 0x410004c5, AUX_CTRL 0x72450801, Cache size: 524288 B
+K 01-01 00:00:00.261 W KERNEL                                       : CPU1: Booted secondary processor
+K 01-01 00:00:00.410 I KERNEL                                       : CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+K 01-01 00:00:00.410 I KERNEL                                       : Brought up 2 CPUs
+K 01-01 00:00:00.410 I KERNEL                                       : SMP: Total of 2 processors activated (3125.33 BogoMIPS).
+K 01-01 00:00:00.413 I KERNEL                                       : devtmpfs: initialized
+K 01-01 00:00:00.444 I KERNEL                                       : pinctrl core: initialized pinctrl subsystem
+K 01-01 00:00:00.446 I KERNEL                                       : dummy: 
+K 01-01 00:00:00.447 I KERNEL                                       : NET: Registered protocol family 16
+K 01-01 00:00:00.450 W KERNEL                                       : i2c-core: driver [p7mu] using legacy suspend method
+K 01-01 00:00:00.450 W KERNEL                                       : i2c-core: driver [p7mu] using legacy resume method
+K 01-01 00:00:00.450 I KERNEL                                       : Ram Oops registered with memory from bff00000-bfffffff
+K 01-01 00:00:00.450 D KERNEL                                       : p7: machine setup
+K 01-01 00:00:00.450 D KERNEL                                       : p7: registering p7-ion.0...
+K 01-01 00:00:00.451 D KERNEL                                       : p7: registering p7-pinctrl.0...
+K 01-01 00:00:00.452 I KERNEL                                       : p7-pinctrl p7-pinctrl.0: loaded
+K 01-01 00:00:00.452 D KERNEL                                       : p7: registering user_gpio.-1...
+K 01-01 00:00:00.452 D KERNEL                                       : p7: registering pl330-dma.0...
+K 01-01 00:00:00.453 I KERNEL                                       : amba pl330-dma.0: mapped microcode memory region [00100000:00101fff]
+K 01-01 00:00:00.453 D KERNEL                                       : p7: registering p7-gpio.0...
+K 01-01 00:00:00.454 I KERNEL                                       : gpiochip_add: registered GPIOs 0 to 219 on device: p7-gpio
+K 01-01 00:00:00.454 I KERNEL                                       : p7-gpio p7-gpio.0: GPIO driver initialized
+K 01-01 00:00:00.454 D KERNEL                                       : p7: config pin 71 (SPI_09b__GPIO_071__PWM_15)
+K 01-01 00:00:00.454 D KERNEL                                       : p7: config pin 72 (SPI_10b__GPIO_072)
+K 01-01 00:00:00.454 D KERNEL                                       : p7: config pin 73 (SPI_11b__GPIO_073__I2C_SECURE_CLKa)
+K 01-01 00:00:00.454 D KERNEL                                       : p7: config pin 74 (SPI_12b__GPIO_074)
+K 01-01 00:00:00.454 I KERNEL                                       : sicilia rev 4
+K 01-01 00:00:00.454 D KERNEL                                       : p7: registering px-uart.0...
+K 01-01 00:00:00.455 D KERNEL                                       : p7: registering px-uart.0 I/O pins...
+K 01-01 00:00:00.455 D KERNEL                                       : p7:	install UART_0_RX I/O pin function
+K 01-01 00:00:00.455 D KERNEL                                       : p7:	install UART_0_RX__GPIO_055 I/O pin settings
+K 01-01 00:00:00.455 D KERNEL                                       : p7:	install UART_0_TX I/O pin function
+K 01-01 00:00:00.455 D KERNEL                                       : p7:	install UART_0_TX__GPIO_056 I/O pin settings
+K 01-01 00:00:00.455 I KERNEL                                       : hw_info : uart 0 rts/cts 0
+K 01-01 00:00:00.455 D KERNEL                                       : p7: registering p7-i2cm.0 I/O pins...
+K 01-01 00:00:00.455 D KERNEL                                       : p7:	install I2C_0_CLK I/O pin function
+K 01-01 00:00:00.455 D KERNEL                                       : p7:	install I2C_0_CLK__GPIO_064__I2C_0_SL_CLK I/O pin settings
+K 01-01 00:00:00.455 D KERNEL                                       : p7:	install I2C_0_DAT I/O pin function
+K 01-01 00:00:00.455 D KERNEL                                       : p7:	install I2C_0_DAT__GPIO_063__I2C_0_SL_DAT I/O pin settings
+K 01-01 00:00:00.455 D KERNEL                                       : p7: registering p7-i2cm.0...
+K 01-01 00:00:00.456 I KERNEL                                       : p7-i2cm p7-i2cm.0: controller probe successfully
+K 01-01 00:00:00.457 I KERNEL                                       : p7-i2cm.0 debugfs interface registered
+K 01-01 00:00:00.457 D KERNEL                                       : p7: registering p7-i2cm.1 I/O pins...
+K 01-01 00:00:00.457 D KERNEL                                       : p7:	install I2C_1_CLK I/O pin function
+K 01-01 00:00:00.457 D KERNEL                                       : p7:	install I2C_1_CLK__GPIO_062__I2C_1_SL_CLK I/O pin settings
+K 01-01 00:00:00.457 D KERNEL                                       : p7:	install I2C_1_DAT I/O pin function
+K 01-01 00:00:00.457 D KERNEL                                       : p7:	install I2C_1_DAT__GPIO_061__I2C_1_SL_DAT I/O pin settings
+K 01-01 00:00:00.457 D KERNEL                                       : p7: registering p7-i2cm.1...
+K 01-01 00:00:00.457 I KERNEL                                       : p7-i2cm p7-i2cm.1: controller probe successfully
+K 01-01 00:00:00.458 I KERNEL                                       : p7-i2cm.1 debugfs interface registered
+K 01-01 00:00:00.458 D KERNEL                                       : p7: registering p7-i2cm.2 I/O pins...
+K 01-01 00:00:00.458 D KERNEL                                       : p7:	install I2C_2_CLK I/O pin function
+K 01-01 00:00:00.458 D KERNEL                                       : p7:	install I2C_2_CLK__GPIO_060__I2C_2_SL_CLK I/O pin settings
+K 01-01 00:00:00.458 D KERNEL                                       : p7:	install I2C_2_DAT I/O pin function
+K 01-01 00:00:00.458 D KERNEL                                       : p7:	install I2C_2_DAT__GPIO_059__I2C_2_SL_DAT I/O pin settings
+K 01-01 00:00:00.458 D KERNEL                                       : p7: registering p7-i2cm.2...
+K 01-01 00:00:00.458 I KERNEL                                       : p7-i2cm p7-i2cm.2: controller probe successfully
+K 01-01 00:00:00.458 I KERNEL                                       : p7-i2cm.2 debugfs interface registered
+K 01-01 00:00:00.459 D KERNEL                                       : p7: registering p7mu 0-0031...
+K 01-01 00:00:00.459 D KERNEL                                       : p7: registering 0-0031 I/O pins...
+K 01-01 00:00:00.459 D KERNEL                                       : p7:	install REBOOT_P7MU I/O pin function
+K 01-01 00:00:00.460 E KERNEL                                       : p7mu 0-0031: 32 Mhz clock do not match wanted int got ext
+K 01-01 00:00:00.460 I KERNEL                                       : p7mu 0-0031: boot reason: first boot
+K 01-01 00:00:00.460 I KERNEL                                       : p7mu 0-0031: p7mu event before reboot : 
+K 01-01 00:00:00.462 I KERNEL                                       : p7mu 0-0031: p7mu irq 160 182
+K 01-01 00:00:00.463 I KERNEL                                       : gpiochip_add: registered GPIOs 220 to 224 on device: p7mu-gpio
+K 01-01 00:00:00.464 I KERNEL                                       : p7mu 0-0031: attached device v2 to I2C bus p7-i2cm.0
+K 01-01 00:00:00.464 D KERNEL                                       : p7: config pin 49 (GPIO_049)
+K 01-01 00:00:00.464 D KERNEL                                       : p7: config pin 50 (GPIO_050)
+K 01-01 00:00:00.465 D KERNEL                                       : p7: registering switch-voltage.3...
+K 01-01 00:00:00.465 D KERNEL                                       : p7: registering acs3-sdhci.0...
+K 01-01 00:00:00.465 D KERNEL                                       : p7: registering acs3-sdhci.0 I/O pins...
+K 01-01 00:00:00.465 D KERNEL                                       : p7:	install SD_0_CLK I/O pin function
+K 01-01 00:00:00.465 D KERNEL                                       : p7:	install SD_0_CLK__GPIO_021 I/O pin settings
+K 01-01 00:00:00.465 D KERNEL                                       : p7:	install SD_0_CMD I/O pin function
+K 01-01 00:00:00.465 D KERNEL                                       : p7:	install SD_0_CMD__GPIO_022 I/O pin settings
+K 01-01 00:00:00.465 D KERNEL                                       : p7:	install SD_0_DAT00 I/O pin function
+K 01-01 00:00:00.465 D KERNEL                                       : p7:	install SD_0_DAT00__GPIO_023 I/O pin settings
+K 01-01 00:00:00.465 D KERNEL                                       : p7:	install SD_0_DAT01 I/O pin function
+K 01-01 00:00:00.465 D KERNEL                                       : p7:	install SD_0_DAT01__GPIO_024 I/O pin settings
+K 01-01 00:00:00.465 D KERNEL                                       : p7:	install SD_0_DAT02 I/O pin function
+K 01-01 00:00:00.465 D KERNEL                                       : p7:	install SD_0_DAT02__GPIO_025 I/O pin settings
+K 01-01 00:00:00.465 D KERNEL                                       : p7:	install SD_0_DAT03 I/O pin function
+K 01-01 00:00:00.465 D KERNEL                                       : p7:	install SD_0_DAT03__GPIO_026 I/O pin settings
+K 01-01 00:00:00.465 D KERNEL                                       : p7: registering p7_pwm.0 I/O pins...
+K 01-01 00:00:00.465 D KERNEL                                       : p7:	install PWM_00 I/O pin function
+K 01-01 00:00:00.465 D KERNEL                                       : p7:	install AAI_00__GPIO_119__PWM_00 I/O pin settings
+K 01-01 00:00:00.465 D KERNEL                                       : p7:	install PWM_01 I/O pin function
+K 01-01 00:00:00.465 D KERNEL                                       : p7:	install AAI_01__GPIO_120__PWM_01 I/O pin settings
+K 01-01 00:00:00.465 D KERNEL                                       : p7:	install PWM_05 I/O pin function
+K 01-01 00:00:00.465 D KERNEL                                       : p7:	install PWM_06 I/O pin function
+K 01-01 00:00:00.465 D KERNEL                                       : p7:	install PWM_07 I/O pin function
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install AAI_07__GPIO_126__PWM_07 I/O pin settings
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install PWM_08 I/O pin function
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install AAI_08__GPIO_127__PWM_08 I/O pin settings
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install PWM_09 I/O pin function
+K 01-01 00:00:00.466 D KERNEL                                       : p7:	install AAI_09__GPIO_128__PWM_09 I/O pin settings
+K 01-01 00:00:00.466 D KERNEL                                       : p7: registering p7_pwm.0...
+K 01-01 00:00:00.467 D KERNEL                                       : p7: registering avi.0...
+K 01-01 00:00:00.467 D KERNEL                                       : p7: registering avicam.0...
+K 01-01 00:00:00.468 D KERNEL                                       : p7: registering avicam.0 I/O pins...
+K 01-01 00:00:00.468 D KERNEL                                       : p7:	install CAM_0_CLK I/O pin function
+K 01-01 00:00:00.468 D KERNEL                                       : p7:	install CAM_0_HS I/O pin function
+K 01-01 00:00:00.468 D KERNEL                                       : p7:	install CAM_0_VS I/O pin function
+K 01-01 00:00:00.468 D KERNEL                                       : p7:	install CAM_0_DATA08 I/O pin function
+K 01-01 00:00:00.468 D KERNEL                                       : p7:	install CAM_0_DATA09 I/O pin function
+K 01-01 00:00:00.468 D KERNEL                                       : p7:	install CAM_0_DATA10 I/O pin function
+K 01-01 00:00:00.468 D KERNEL                                       : p7:	install CAM_0_DATA11 I/O pin function
+K 01-01 00:00:00.468 D KERNEL                                       : p7:	install CAM_0_DATA12 I/O pin function
+K 01-01 00:00:00.468 D KERNEL                                       : p7:	install CAM_0_DATA13 I/O pin function
+K 01-01 00:00:00.468 D KERNEL                                       : p7:	install CAM_0_DATA14 I/O pin function
+K 01-01 00:00:00.468 D KERNEL                                       : p7:	install CAM_0_DATA15 I/O pin function
+K 01-01 00:00:00.468 D KERNEL                                       : p7:	install CAM_0_DATA16 I/O pin function
+K 01-01 00:00:00.468 D KERNEL                                       : p7:	install CAM_0_DATA17 I/O pin function
+K 01-01 00:00:00.501 D KERNEL                                       : p7: registering avicam.2...
+K 01-01 00:00:00.501 D KERNEL                                       : p7: registering avicam.2 I/O pins...
+K 01-01 00:00:00.501 D KERNEL                                       : p7:	install CAM_2_CLK I/O pin function
+K 01-01 00:00:00.501 D KERNEL                                       : p7:	install CAM_2_HS I/O pin function
+K 01-01 00:00:00.501 D KERNEL                                       : p7:	install CAM_2_VS I/O pin function
+K 01-01 00:00:00.501 D KERNEL                                       : p7:	install CAM_2_DATA00 I/O pin function
+K 01-01 00:00:00.501 D KERNEL                                       : p7:	install CAM_2_DATA01 I/O pin function
+K 01-01 00:00:00.501 D KERNEL                                       : p7:	install CAM_2_DATA02 I/O pin function
+K 01-01 00:00:00.501 D KERNEL                                       : p7:	install CAM_2_DATA03 I/O pin function
+K 01-01 00:00:00.501 D KERNEL                                       : p7:	install CAM_2_DATA04 I/O pin function
+K 01-01 00:00:00.501 D KERNEL                                       : p7:	install CAM_2_DATA05 I/O pin function
+K 01-01 00:00:00.501 D KERNEL                                       : p7:	install CAM_2_DATA06 I/O pin function
+K 01-01 00:00:00.501 D KERNEL                                       : p7:	install CAM_2_DATA07 I/O pin function
+K 01-01 00:00:00.501 D KERNEL                                       : p7:	install CAM_2_DATA08 I/O pin function
+K 01-01 00:00:00.501 D KERNEL                                       : p7:	install CAM_2_DATA09 I/O pin function
+K 01-01 00:00:00.520 D KERNEL                                       : p7: registering avicam.3...
+K 01-01 00:00:00.521 D KERNEL                                       : p7: registering avicam.3 I/O pins...
+K 01-01 00:00:00.521 D KERNEL                                       : p7:	install CAM_3_CLK I/O pin function
+K 01-01 00:00:00.521 D KERNEL                                       : p7:	install CAM_3_HS I/O pin function
+K 01-01 00:00:00.521 D KERNEL                                       : p7:	install CAM_3_VS I/O pin function
+K 01-01 00:00:00.521 D KERNEL                                       : p7:	install CAM_3_DATA00 I/O pin function
+K 01-01 00:00:00.521 D KERNEL                                       : p7:	install CAM_3_DATA01 I/O pin function
+K 01-01 00:00:00.521 D KERNEL                                       : p7:	install CAM_3_DATA02 I/O pin function
+K 01-01 00:00:00.521 D KERNEL                                       : p7:	install CAM_3_DATA03 I/O pin function
+K 01-01 00:00:00.521 D KERNEL                                       : p7:	install CAM_3_DATA04 I/O pin function
+K 01-01 00:00:00.521 D KERNEL                                       : p7:	install CAM_3_DATA05 I/O pin function
+K 01-01 00:00:00.521 D KERNEL                                       : p7:	install CAM_3_DATA06 I/O pin function
+K 01-01 00:00:00.521 D KERNEL                                       : p7:	install CAM_3_DATA07 I/O pin function
+K 01-01 00:00:00.521 D KERNEL                                       : p7:	install CAM_3_DATA08a I/O pin function
+K 01-01 00:00:00.521 D KERNEL                                       : p7:	install CAM_3_DATA09a I/O pin function
+K 01-01 00:00:00.540 D KERNEL                                       : p7: registering avicam.4...
+K 01-01 00:00:00.541 D KERNEL                                       : p7: registering avicam.4 I/O pins...
+K 01-01 00:00:00.541 D KERNEL                                       : p7:	install CAM_4_CLK I/O pin function
+K 01-01 00:00:00.541 D KERNEL                                       : p7:	install CAM_4_HS I/O pin function
+K 01-01 00:00:00.541 D KERNEL                                       : p7:	install CAM_4_VS I/O pin function
+K 01-01 00:00:00.541 D KERNEL                                       : p7:	install CAM_4_DATA00 I/O pin function
+K 01-01 00:00:00.541 D KERNEL                                       : p7:	install CAM_4_DATA01 I/O pin function
+K 01-01 00:00:00.541 D KERNEL                                       : p7:	install CAM_4_DATA02 I/O pin function
+K 01-01 00:00:00.541 D KERNEL                                       : p7:	install CAM_4_DATA03 I/O pin function
+K 01-01 00:00:00.541 D KERNEL                                       : p7:	install CAM_4_DATA04 I/O pin function
+K 01-01 00:00:00.541 D KERNEL                                       : p7:	install CAM_4_DATA05 I/O pin function
+K 01-01 00:00:00.541 D KERNEL                                       : p7:	install CAM_4_DATA06 I/O pin function
+K 01-01 00:00:00.541 D KERNEL                                       : p7:	install CAM_4_DATA07 I/O pin function
+K 01-01 00:00:00.541 D KERNEL                                       : p7:	install CAM_4_DATA08 I/O pin function
+K 01-01 00:00:00.541 D KERNEL                                       : p7:	install CAM_4_DATA09 I/O pin function
+K 01-01 00:00:00.560 D KERNEL                                       : p7: registering avicam.5...
+K 01-01 00:00:00.561 D KERNEL                                       : p7: registering avicam.5 I/O pins...
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install CAM_5_CLK I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install CAM_5_HS I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install CAM_5_VS I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install CAM_5_DATA00 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install CAM_5_DATA01 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install CAM_5_DATA02 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install CAM_5_DATA03 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install CAM_5_DATA04 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install CAM_5_DATA05 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install CAM_5_DATA06 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install CAM_5_DATA07 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install CAM_5_DATA08 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install CAM_5_DATA09 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7: registering ci_hdrc.0...
+K 01-01 00:00:00.561 D KERNEL                                       : p7: registering ci_hdrc.0 I/O pins...
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA00 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA00__GPIO_095 I/O pin settings
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA01 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA01__GPIO_096 I/O pin settings
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA02 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA02__GPIO_097 I/O pin settings
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA03 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA03__GPIO_098 I/O pin settings
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA04 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA04__GPIO_099 I/O pin settings
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA05 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA05__GPIO_100 I/O pin settings
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA06 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA06__GPIO_101 I/O pin settings
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA07 I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DATA07__GPIO_102 I/O pin settings
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_NXT I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_NXT__GPIO_103 I/O pin settings
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_STP I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_STP__GPIO_117 I/O pin settings
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DIR I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_DIR__GPIO_104 I/O pin settings
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_CLK I/O pin function
+K 01-01 00:00:00.561 D KERNEL                                       : p7:	install ULPI_0_CLK__GPIO_105 I/O pin settings
+K 01-01 00:00:00.561 D KERNEL                                       : p7: registering ci_hdrc.1...
+K 01-01 00:00:00.562 D KERNEL                                       : p7: registering ci_hdrc.1 I/O pins...
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA00 I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA00__GPIO_106__I2C_2_CLKa I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA01 I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA01__GPIO_107__I2C_2_DATa I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA02 I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA02__GPIO_108__I2C_2_CLKb I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA03 I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA03__GPIO_109__I2C_2_DATb I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA04 I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA04__GPIO_110__I2C_2_CLKc I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA05 I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA05__GPIO_111__I2C_2_DATc I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA06 I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA06__GPIO_112__I2C_2_CLKd I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA07 I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DATA07__GPIO_113__I2C_2_DATd I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_NXT I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_NXT__GPIO_114__I2C_2_CLKe I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_STP I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_STP__GPIO_116__I2C_2_DATe I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DIR I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_DIR__GPIO_115 I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_CLK I/O pin function
+K 01-01 00:00:00.562 D KERNEL                                       : p7:	install ULPI_1_CLK__GPIO_118 I/O pin settings
+K 01-01 00:00:00.562 D KERNEL                                       : p7: registering hx280-venc.0...
+K 01-01 00:00:00.562 D KERNEL                                       : p7: registering avi_m2m.0...
+K 01-01 00:00:00.562 D KERNEL                                       : p7: registering avi_m2m.1...
+K 01-01 00:00:00.563 I KERNEL                                       : hw_info : i2c-1 device 0x68 : mpu6050 (IMU)
+K 01-01 00:00:00.564 I KERNEL                                       : Export GPIO-76 as IMU irq
+K 01-01 00:00:00.566 D KERNEL                                       : p7: registering reg-fixed-voltage.0...
+K 01-01 00:00:00.566 D KERNEL                                       : p7: registering switch-voltage.4...
+K 01-01 00:00:00.566 D KERNEL                                       : p7: registering acs3-sdhci.1...
+K 01-01 00:00:00.567 D KERNEL                                       : p7: registering acs3-sdhci.1 I/O pins...
+K 01-01 00:00:00.567 D KERNEL                                       : p7:	install SD_1_CLK I/O pin function
+K 01-01 00:00:00.567 D KERNEL                                       : p7:	install SD_1_CLK__GPIO_015__UART_5_TX I/O pin settings
+K 01-01 00:00:00.567 D KERNEL                                       : p7:	install SD_1_CMD I/O pin function
+K 01-01 00:00:00.567 D KERNEL                                       : p7:	install SD_1_CMD__GPIO_016__UART_5_RX I/O pin settings
+K 01-01 00:00:00.567 D KERNEL                                       : p7:	install SD_1_DAT00 I/O pin function
+K 01-01 00:00:00.567 D KERNEL                                       : p7:	install SD_1_DAT00__GPIO_017__UART_6_TX I/O pin settings
+K 01-01 00:00:00.567 D KERNEL                                       : p7:	install SD_1_DAT01 I/O pin function
+K 01-01 00:00:00.567 D KERNEL                                       : p7:	install SD_1_DAT01__GPIO_019__UART_6_RX I/O pin settings
+K 01-01 00:00:00.567 D KERNEL                                       : p7:	install SD_1_DAT02 I/O pin function
+K 01-01 00:00:00.567 D KERNEL                                       : p7:	install SD_1_DAT02__GPIO_018__UART_7_TX I/O pin settings
+K 01-01 00:00:00.567 D KERNEL                                       : p7:	install SD_1_DAT03 I/O pin function
+K 01-01 00:00:00.567 D KERNEL                                       : p7:	install SD_1_DAT03__GPIO_020__UART_7_RX I/O pin settings
+K 01-01 00:00:00.567 I KERNEL                                       : hw-breakpoint: found 5 (+1 reserved) breakpoint and 1 watchpoint registers.
+K 01-01 00:00:00.567 I KERNEL                                       : hw-breakpoint: maximum watchpoint size is 4 bytes.
+K 01-01 00:00:00.597 I KERNEL                                       : bio: create slab <bio-0> at 0
+K 01-01 00:00:00.598 W KERNEL                                       : i2c-core: driver [pca953x] using legacy suspend method
+K 01-01 00:00:00.598 W KERNEL                                       : i2c-core: driver [pca953x] using legacy resume method
+K 01-01 00:00:00.599 I KERNEL                                       : vwl18xx: 1800 mV 
+K 01-01 00:00:00.601 N KERNEL                                       : SCSI subsystem initialized
+K 01-01 00:00:00.602 I KERNEL                                       : usbcore: registered new interface driver usbfs
+K 01-01 00:00:00.602 I KERNEL                                       : usbcore: registered new interface driver hub
+K 01-01 00:00:00.602 I KERNEL                                       : usbcore: registered new device driver usb
+K 01-01 00:00:00.603 I KERNEL                                       : Linux media interface: v0.10
+K 01-01 00:00:00.603 I KERNEL                                       : Linux video capture interface: v2.00
+K 01-01 00:00:00.603 I KERNEL                                       : pps_core: LinuxPPS API ver. 1 registered
+K 01-01 00:00:00.603 I KERNEL                                       : pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+K 01-01 00:00:00.603 I KERNEL                                       : PTP clock support registered
+K 01-01 00:00:00.604 I KERNEL                                       : Advanced Linux Sound Architecture Driver Version 1.0.25.
+K 01-01 00:00:00.604 W KERNEL                                       : i2c-core: driver [smsc82514] using legacy suspend method
+K 01-01 00:00:00.604 W KERNEL                                       : i2c-core: driver [smsc82514] using legacy resume method
+K 01-01 00:00:00.604 W KERNEL                                       : i2c-core: driver [lvds] using legacy suspend method
+K 01-01 00:00:00.604 W KERNEL                                       : i2c-core: driver [lvds] using legacy resume method
+K 01-01 00:00:00.605 I KERNEL                                       : sdhci0_bus_vdd: 3300 mV 
+K 01-01 00:00:00.605 I KERNEL                                       : sdhci1_bus_vdd: 3300 mV 
+K 01-01 00:00:00.605 E KERNEL                                       : switch-voltage switch-voltage.4: Failed to set supply vqmmc
+K 01-01 00:00:00.606 E KERNEL                                       : switch-voltage switch-voltage.4: Failed to register regulator: -16
+K 01-01 00:00:00.606 W KERNEL                                       : switch-voltage: probe of switch-voltage.4 failed with error -16
+K 01-01 00:00:00.608 I KERNEL                                       : Switching to clocksource timer2
+K 01-01 00:00:00.795 I KERNEL                                       : NET: Registered protocol family 2
+K 01-01 00:00:00.796 I KERNEL                                       : IP route cache hash table entries: 32768 (order: 5, 131072 bytes)
+K 01-01 00:00:00.799 I KERNEL                                       : TCP established hash table entries: 131072 (order: 8, 1048576 bytes)
+K 01-01 00:00:00.802 I KERNEL                                       : TCP bind hash table entries: 65536 (order: 9, 2621440 bytes)
+K 01-01 00:00:00.817 I KERNEL                                       : TCP: Hash tables configured (established 131072 bind 65536)
+K 01-01 00:00:00.817 I KERNEL                                       : TCP: reno registered
+K 01-01 00:00:00.817 I KERNEL                                       : UDP hash table entries: 512 (order: 3, 49152 bytes)
+K 01-01 00:00:00.817 I KERNEL                                       : UDP-Lite hash table entries: 512 (order: 3, 49152 bytes)
+K 01-01 00:00:00.819 I KERNEL                                       : NET: Registered protocol family 1
+K 01-01 00:00:00.821 I KERNEL                                       : RPC: Registered named UNIX socket transport module.
+K 01-01 00:00:00.821 I KERNEL                                       : RPC: Registered udp transport module.
+K 01-01 00:00:00.821 I KERNEL                                       : RPC: Registered tcp transport module.
+K 01-01 00:00:00.821 I KERNEL                                       : RPC: Registered tcp NFSv4.1 backchannel transport module.
+K 01-01 00:00:00.831 I KERNEL                                       : squashfs: version 4.0 (2009/01/31) Phillip Lougher
+K 01-01 00:00:00.831 N KERNEL                                       : NFS: Registering the id_resolver key type
+K 01-01 00:00:00.833 I KERNEL                                       : NTFS driver 2.1.30 [Flags: R/O].
+K 01-01 00:00:00.833 I KERNEL                                       : fuse init (API version 7.18)
+K 01-01 00:00:00.834 I KERNEL                                       : msgmni has been set to 1070
+K 01-01 00:00:00.838 I KERNEL                                       : Block layer SCSI generic (bsg) driver version 0.4 loaded (major 247)
+K 01-01 00:00:00.838 I KERNEL                                       : io scheduler noop registered
+K 01-01 00:00:00.838 I KERNEL                                       : io scheduler deadline registered (default)
+K 01-01 00:00:00.838 I KERNEL                                       : start plist test
+K 01-01 00:00:00.843 I KERNEL                                       : end plist test
+K 01-01 00:00:00.846 I KERNEL                                       : dma-pl330 pl330-dma.0: Loaded driver for PL330 DMAC-267056
+K 01-01 00:00:00.846 I KERNEL                                       : dma-pl330 pl330-dma.0: 	DBUFF-64x8bytes Num_Chans-6 Num_Peri-7 Num_Events-6
+K 01-01 00:00:00.860 I KERNEL                                       : loop: module loaded
+K 01-01 00:00:00.865 I KERNEL                                       : tun: Universal TUN/TAP device driver, 1.6
+K 01-01 00:00:00.865 I KERNEL                                       : tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+K 01-01 00:00:00.866 I KERNEL                                       : PPP generic driver version 2.4.2
+K 01-01 00:00:00.866 I KERNEL                                       : PPP BSD Compression module registered
+K 01-01 00:00:00.866 I KERNEL                                       : PPP Deflate Compression module registered
+K 01-01 00:00:00.869 I KERNEL                                       : PPP MPPE Compression module registered
+K 01-01 00:00:00.869 I KERNEL                                       : NET: Registered protocol family 24
+K 01-01 00:00:00.869 I KERNEL                                       : Initializing USB Mass Storage driver...
+K 01-01 00:00:00.869 I KERNEL                                       : usbcore: registered new interface driver usb-storage
+K 01-01 00:00:00.869 I KERNEL                                       : USB Mass Storage support registered.
+K 01-01 00:00:00.870 I KERNEL                                       : usbcore: registered new interface driver libusual
+K 01-01 00:00:00.870 I KERNEL                                       : usbcore: registered new interface driver usbserial
+K 01-01 00:00:00.870 I KERNEL                                       : usbserial: USB Serial Driver core
+K 01-01 00:00:00.870 I KERNEL                                       : usbcore: registered new interface driver ftdi_sio
+K 01-01 00:00:00.870 I KERNEL                                       : USB Serial support registered for FTDI USB Serial Device
+K 01-01 00:00:00.870 I KERNEL                                       : ftdi_sio: v1.6.0:USB FTDI Serial Converters Driver
+K 01-01 00:00:00.873 D KERNEL                                       : ci_hdrc ci_hdrc.0: disabling VbusValid interrupt (0)
+K 01-01 00:00:00.875 D KERNEL                                       : ci_hdrc ci_hdrc.1: disabling VbusValid interrupt (0)
+K 01-01 00:00:00.875 I KERNEL                                       : ci_hdrc ci_hdrc.1: ChipIdea HDRC EHCI
+K 01-01 00:00:00.876 I KERNEL                                       : ci_hdrc ci_hdrc.1: new USB bus registered, assigned bus number 1
+K 01-01 00:00:00.919 I KERNEL                                       : ci_hdrc ci_hdrc.1: USB 2.0 started, EHCI 1.00
+K 01-01 00:00:00.919 I KERNEL                                       : usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+K 01-01 00:00:00.919 I KERNEL                                       : usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+K 01-01 00:00:00.919 I KERNEL                                       : usb usb1: Product: ChipIdea HDRC EHCI
+K 01-01 00:00:00.919 I KERNEL                                       : usb usb1: Manufacturer: Linux 3.4.11-02624-g15e22bef7d8 ehci_hcd
+K 01-01 00:00:00.919 I KERNEL                                       : usb usb1: SerialNumber: ci_hdrc.1
+K 01-01 00:00:00.921 I KERNEL                                       : hub 1-0:1.0: USB hub found
+K 01-01 00:00:00.921 I KERNEL                                       : hub 1-0:1.0: 1 port detected
+K 01-01 00:00:00.923 I KERNEL                                       : file system registered
+K 01-01 00:00:00.927 I KERNEL                                       :  gadget: Mass Storage Function, version: 2009/09/11
+K 01-01 00:00:00.927 I KERNEL                                       :  gadget: Number of LUNs=1
+K 01-01 00:00:00.927 I KERNEL                                       :  lun0: LUN: removable file: (no medium)
+K 01-01 00:00:00.928 W KERNEL                                       : Gadget Android: controller 'ci_pdata' not recognized
+K 01-01 00:00:00.928 I KERNEL                                       :  gadget: android_usb ready
+K 01-01 00:00:00.929 I KERNEL                                       : i2c /dev entries driver
+K 01-01 00:00:00.931 W KERNEL                                       : i2c-core: driver [tw8834] using legacy suspend method
+K 01-01 00:00:00.931 W KERNEL                                       : i2c-core: driver [tw8834] using legacy resume method
+K 01-01 00:00:00.931 W KERNEL                                       : i2c-core: driver [tw9990] using legacy suspend method
+K 01-01 00:00:00.931 W KERNEL                                       : i2c-core: driver [tw9990] using legacy resume method
+K 01-01 00:00:00.933 I KERNEL                                       : device-mapper: uevent: version 1.0.3
+K 01-01 00:00:00.934 I KERNEL                                       : device-mapper: ioctl: 4.22.0-ioctl (2011-10-19) initialised: dm-devel@redhat.com
+K 01-01 00:00:00.934 I KERNEL                                       : sdhci: Secure Digital Host Controller Interface driver
+K 01-01 00:00:00.934 I KERNEL                                       : sdhci: Copyright(c) Pierre Ossman
+K 01-01 00:00:00.935 D KERNEL                                       : Registered led device: sicilia:green
+K 01-01 00:00:00.935 D KERNEL                                       : Registered led device: sicilia:red
+K 01-01 00:00:00.935 D KERNEL                                       : Registered led device: sicilia:blue
+K 01-01 00:00:00.936 I KERNEL                                       : usbcore: registered new interface driver usbhid
+K 01-01 00:00:00.936 I KERNEL                                       : usbhid: USB HID core driver
+K 01-01 00:00:00.938 I KERNEL                                       : ashmem: initialized
+K 01-01 00:00:00.938 I KERNEL                                       : logger: created 256K log 'log_main'
+K 01-01 00:00:00.939 I KERNEL                                       : logger: created 256K log 'log_events'
+K 01-01 00:00:00.939 I KERNEL                                       : logger: created 256K log 'log_radio'
+K 01-01 00:00:00.939 I KERNEL                                       : logger: created 256K log 'log_system'
+K 01-01 00:00:00.940 I KERNEL                                       : logger: created 64K log 'log_ckcm'
+K 01-01 00:00:00.940 I KERNEL                                       : created 256K log 'ulog_main'
+K 01-01 00:00:00.943 I KERNEL                                       : Serial: Parrot5/5+ UART driver $Revision: 1.19 $
+K 01-01 00:00:00.944 I KERNEL                                       : px-uart.0: ttyPA0 at MMIO 0x2100000 (irq = 91) is a PARROT5
+K 01-01 00:00:03.184 I KERNEL                                       : console [ttyPA0] enabled
+K 01-01 00:00:03.188 I KERNEL                                       : avi avi.0: Found AVI revision 3
+K 01-01 00:00:03.199 I KERNEL                                       : avi avi.0: AVI core driver initialized
+K 01-01 00:00:03.206 I KERNEL                                       : AVI DebugFS registered
+K 01-01 00:00:03.216 I KERNEL                                       : Powering on maincam
+K 01-01 00:00:03.279 W KERNEL                                       : Could not configure maincam VCM. You probably need a hardware patch
+K 01-01 00:00:03.286 I KERNEL                                       : Powering off maincam
+K 01-01 00:00:03.289 I KERNEL                                       : tc358746a 2-000e: Found tc358746a chip
+K 01-01 00:00:03.294 I KERNEL                                       : tc358746a 2-000e: TC358746A MIPI bridge successfully probed
+K 01-01 00:00:03.302 I KERNEL                                       : Powering on maincam
+K 01-01 00:00:03.359 W KERNEL                                       : Could not configure maincam VCM. You probably need a hardware patch
+K 01-01 00:00:03.366 I KERNEL                                       : ov16825 2-0036: Found OV16825 chip
+K 01-01 00:00:03.371 I KERNEL                                       : Powering off maincam
+K 01-01 00:00:03.374 I KERNEL                                       : ov16825 2-0036: OV16825 sensor succesfully probed
+K 01-01 00:00:03.380 I KERNEL                                       : avicam avicam.0: video device successfuly registered as video0
+K 01-01 00:00:03.409 I KERNEL                                       : mt9m021 2-0012: Found mt9m021 chip
+K 01-01 00:00:03.414 I KERNEL                                       : avicam avicam.2: video device successfuly registered as video1
+K 01-01 00:00:03.439 I KERNEL                                       : mt9m021 2-0013: Found mt9m021 chip
+K 01-01 00:00:03.444 I KERNEL                                       : avicam avicam.3: video device successfuly registered as video2
+K 01-01 00:00:03.469 I KERNEL                                       : mt9m021 2-0014: Found mt9m021 chip
+K 01-01 00:00:03.474 I KERNEL                                       : avicam avicam.4: video device successfuly registered as video3
+K 01-01 00:00:03.499 I KERNEL                                       : mt9m021 2-0015: Found mt9m021 chip
+K 01-01 00:00:03.504 I KERNEL                                       : avicam avicam.5: video device successfuly registered as video4
+K 01-01 00:00:03.511 I KERNEL                                       : registering avicam V4L2 subdevice nodes.
+K 01-01 00:00:03.518 I KERNEL                                       : avi_r2r Initialized
+K 01-01 00:00:03.525 I KERNEL                                       : avi avi.0: stats video device successfuly registered as video6
+K 01-01 00:00:03.532 I KERNEL                                       : avi_m2m avi_m2m.0: video device successfuly registered as video5
+K 01-01 00:00:03.542 I KERNEL                                       : avi_m2m avi_m2m.1: video device successfuly registered as video7
+K 01-01 00:00:03.550 I KERNEL                                       : avi_v4l2_dev avi: successfully probed
+K 01-01 00:00:03.555 I KERNEL                                       : hx280-venc hx280-venc.0: found hx280 video encoder (0x48313610).
+K 01-01 00:00:03.563 W KERNEL                                       : Mali: Mali device driver loaded
+K 01-01 00:00:03.569 I KERNEL                                       : mmc0: no vqmmc regulator found
+K 01-01 00:00:03.573 I KERNEL                                       : mmc0: no vmmc regulator found
+K 01-01 00:00:03.577 D KERNEL                                       : Registered led device: mmc0::
+K 01-01 00:00:03.659 I KERNEL                                       : mmc0: SDHCI controller on acs3-sdhci [acs3-sdhci.0] using ADMA
+K 01-01 00:00:03.667 D KERNEL                                       : Registered led device: mmc1::
+K 01-01 00:00:03.829 I KERNEL                                       : mmc1: SDHCI controller on acs3-sdhci [acs3-sdhci.1] using ADMA
+K 01-01 00:00:03.838 I KERNEL                                       : p7mu-rtc p7mu-rtc: rtc core: registered p7mu-rtc as rtc0
+K 01-01 00:00:03.846 W KERNEL                                       : p7mu-adc p7mu-adc: No ADC channel pdata, disabling SPI
+K 01-01 00:00:03.869 I KERNEL                                       : p7mu-adc p7mu-adc: P7MU ADC - ready
+K 01-01 00:00:03.878 I KERNEL                                       : p7-temperature p7-temperature: temperature sensor and ADC registered.
+K 01-01 00:00:03.889 I KERNEL                                       : fc7100-temperature fc7100-temperature: fc7100-temperature temperature sensor and ADC registered.
+K 01-01 00:00:03.900 I KERNEL                                       : u32 classifier
+K 01-01 00:00:03.903 I KERNEL                                       :     Actions configured
+K 01-01 00:00:03.907 I KERNEL                                       : Netfilter messages via NETLINK v0.30.
+K 01-01 00:00:03.912 I KERNEL                                       : nf_conntrack version 0.5.0 (8564 buckets, 34256 max)
+K 01-01 00:00:03.919 I KERNEL                                       : ctnetlink v0.93: registering with nfnetlink.
+K 01-01 00:00:03.926 I KERNEL                                       : mmc0: new high speed DDR MMC card at address 0001
+K 01-01 00:00:03.929 I KERNEL                                       : NF_TPROXY: Transparent proxy support initialized, version 4.1.0
+K 01-01 00:00:03.929 I KERNEL                                       : NF_TPROXY: Copyright (c) 2006-2007 BalaBit IT Ltd.
+K 01-01 00:00:03.946 I KERNEL                                       : xt_time: kernel timezone is -0000
+K 01-01 00:00:03.950 I KERNEL                                       : mmcblk0: mmc0:0001 064G70 58.2 GiB 
+K 01-01 00:00:03.952 I KERNEL                                       : ip_tables: (C) 2000-2006 Netfilter Core Team
+K 01-01 00:00:03.953 I KERNEL                                       : arp_tables: (C) 2002 David S. Miller
+K 01-01 00:00:03.953 I KERNEL                                       : TCP: cubic registered
+K 01-01 00:00:03.953 I KERNEL                                       : Initializing XFRM netlink socket
+K 01-01 00:00:03.973 I KERNEL                                       : NET: Registered protocol family 10
+K 01-01 00:00:03.973 I KERNEL                                       : mmcblk0boot0: mmc0:0001 064G70 partition 1 4.00 MiB
+K 01-01 00:00:03.974 I KERNEL                                       : mmcblk0boot1: mmc0:0001 064G70 partition 2 4.00 MiB
+K 01-01 00:00:03.995 I KERNEL                                       : Mobile IPv6
+K 01-01 00:00:03.998 I KERNEL                                       : ip6_tables: (C) 2000-2006 Netfilter Core Team
+K 01-01 00:00:03.998 I KERNEL                                       :  mmcblk0: p1 p2 p3 p4 p5 p6 p7
+K 01-01 00:00:04.008 I KERNEL                                       : IPv6 over IPv4 tunneling driver
+K 01-01 00:00:04.012 I KERNEL                                       :  mmcblk0boot1: unknown partition table
+K 01-01 00:00:04.014 I KERNEL                                       : NET: Registered protocol family 17
+K 01-01 00:00:04.014 I KERNEL                                       : NET: Registered protocol family 15
+K 01-01 00:00:04.015 I KERNEL                                       : 8021q: 802.1Q VLAN Support v1.8
+K 01-01 00:00:04.015 N KERNEL                                       : Registering the dns_resolver key type
+K 01-01 00:00:04.035 I KERNEL                                       : VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 2
+K 01-01 00:00:04.043 I KERNEL                                       :  mmcblk0boot0: unknown partition table
+K 01-01 00:00:04.043 I KERNEL                                       : ThumbEE CPU extension supported.
+K 01-01 00:00:04.054 W KERNEL                                       : i2c-core: driver [siihdmi] using legacy suspend method
+K 01-01 00:00:04.060 W KERNEL                                       : i2c-core: driver [siihdmi] using legacy resume method
+---------------------------------------------------- beginning of /dev/ulog_main
+U 01-01 00:00:05.175 N boxinit     (init-1)                         : starting 'ext4_fs_checker'
+U 01-01 00:00:05.182 N boxinit     (init-1)                         : starting 'config_cgroups'
+U 01-01 00:00:05.185 N boxinit     (init-1)                         : starting 'lnk_akm8963'
+U 01-01 00:00:05.188 N boxinit     (init-1)                         : starting 'lnk_mpu6050'
+U 01-01 00:00:05.190 N boxinit     (init-1)                         : starting 'heating-imu-pwm'
+U 01-01 00:00:05.192 N boxinit     (init-1)                         : starting 'm2m'
+U 01-01 00:00:05.212 N boxinit     (init-1)                         : starting 'udevd'
+U 01-01 00:00:05.253 N boxinit     (init-1)                         : starting 'random_seed_gen'
+U 01-01 00:00:05.256 N boxinit     (init-1)                         : starting 'clean_bbx'
+U 01-01 00:00:05.258 E boxinit     (init-1)                         : property 'persist.debuggable' doesn't exist while expanding '${persist.debuggable}'
+U 01-01 00:00:05.258 E boxinit     (init-1)                         : cannot expand '${persist.debuggable}'
+U 01-01 00:00:05.258 E boxinit     (init-1)                         : skipping command 'setprop'
+U 01-01 00:00:05.258 E boxinit     (init-1)                         : property 'ro.debuggable' doesn't exist while expanding '${ro.debuggable}'
+U 01-01 00:00:05.258 E boxinit     (init-1)                         : cannot expand '${ro.debuggable}'
+U 01-01 00:00:05.258 E boxinit     (init-1)                         : skipping command 'setprop'
+U 01-01 00:00:05.258 E boxinit     (init-1)                         : property 'persist.debuggable' doesn't exist while expanding '${persist.debuggable}'
+U 01-01 00:00:05.258 E boxinit     (init-1)                         : cannot expand '${persist.debuggable}'
+U 01-01 00:00:05.258 E boxinit     (init-1)                         : skipping command 'setprop'
+U 01-01 00:00:05.259 E boxinit     (init-1)                         : property 'ro.debuggable' doesn't exist while expanding '${ro.debuggable}'
+U 01-01 00:00:05.259 E boxinit     (init-1)                         : cannot expand '${ro.debuggable}'
+U 01-01 00:00:05.259 E boxinit     (init-1)                         : skipping command 'setprop'
+K 01-01 00:00:05.500 I KERNEL                                       : p7mu-rtc p7mu-rtc: setting system clock to 1970-01-01 00:00:05 UTC (5)
+K 01-01 00:00:05.520 I KERNEL                                       : ALSA device list:
+K 01-01 00:00:05.522 I KERNEL                                       :   No soundcards found.
+K 01-01 00:00:05.533 W KERNEL                                       : mmc1: card claims to support voltages below the defined range. These will be ignored.
+K 01-01 00:00:05.549 I KERNEL                                       : EXT4-fs (mmcblk0p4): mounted filesystem with ordered data mode. Opts: (null)
+U 01-01 00:00:05.555 N boxinit     (init-1)                         : process 'lnk_akm8963', pid 78 exited
+U 01-01 00:00:05.555 N boxinit     (init-1)                         : process 'lnk_mpu6050', pid 79 exited
+U 01-01 00:00:05.556 N boxinit     (init-1)                         : process 'heating-imu-pwm', pid 80 exited
+U 01-01 00:00:05.556 N boxinit     (init-1)                         : process 'm2m', pid 81 exited
+U 01-01 00:00:05.557 N boxinit     (init-1)                         : process 'clean_bbx', pid 84 exited
+U 01-01 00:00:05.557 N boxinit     (init-1)                         : starting 'crashdumpd'
+K 01-01 00:00:05.558 I KERNEL                                       : VFS: Mounted root (ext4 filesystem) readonly on device 179:4.
+U 01-01 00:00:05.559 N boxinit     (init-1)                         : starting 'dib0700_drv'
+K 01-01 00:00:05.565 I KERNEL                                       : Freeing init memory: 224K
+K 01-01 00:00:05.568 I KERNEL                                       : Write protecting the kernel text section 80008000 - 80826000
+U 01-01 00:00:05.572 N boxinit     (init-1)                         : starting 'adbd'
+U 01-01 00:00:05.582 N boxinit     (init-1)                         : starting 'dropbear'
+U 01-01 00:00:05.585 N boxinit     (init-1)                         : starting 'probe_wifi'
+U 01-01 00:00:05.587 N boxinit     (init-1)                         : starting 'calib_check'
+U 01-01 00:00:05.589 N boxinit     (init-1)                         : starting 'eeprom_ov16825'
+U 01-01 00:00:05.591 N boxinit     (init-95)                        : Service 'crashdumpd' is promoted !
+K 01-01 00:00:05.607 W KERNEL                                       : mmc1: queuing unknown CIS tuple 0x91 (3 bytes)
+K 01-01 00:00:05.619 I KERNEL                                       : mmc1: new high speed SDIO card at address 0001
+U 01-01 00:00:05.626 N boxinit     (init-1)                         : starting 'kmsgd'
+U 01-01 00:00:05.629 N boxinit     (init-1)                         : starting 'hostapd_cfg'
+U 01-01 00:00:05.714 N boxinit     (init-1)                         : starting 'inetd_rel'
+K 01-01 00:00:05.746 I KERNEL                                       : created 128K log 'ulog_kmsgd'
+U 01-01 00:00:05.750 N boxinit     (init-1)                         : starting 'ulogcatd'
+U 01-01 00:00:05.753 N boxinit     (init-1)                         : starting 'console'
+U 01-01 00:00:05.786 I crashdump   (crashdump-95)                   : crashdump server listening
+K 01-01 00:00:05.806 I KERNEL                                       : EXT4-fs (mmcblk0p6): barriers disabled
+U 01-01 00:00:05.833 I calibration_check(calibration_che-100)       : Checking body calibration
+U 01-01 00:00:05.884 N boxinit     (init-1)                         : process 'calib_check', pid 100 exited
+U 01-01 00:00:05.899 N boxinit     (init-1)                         : process 'dib0700_drv', pid 96 exited
+U 01-01 00:00:05.901 N boxinit     (init-1)                         : starting 'tsl2591_drv'
+U 01-01 00:00:05.995 N boxinit     (init-1)                         : process 'random_seed_gen', pid 83 exited
+U 01-01 00:00:06.114 N boxinit     (init-1)                         : process 'ext4_fs_checker', pid 76 exited
+U 01-01 00:00:06.115 N boxinit     (init-1)                         : starting 'usb_prop_set'
+U 01-01 00:00:06.118 N boxinit     (init-1)                         : starting 'sensors_main_pv'
+U 01-01 00:00:06.131 N boxinit     (init-1)                         : starting 'civet_interface'
+U 01-01 00:00:06.134 N boxinit     (init-1)                         : starting 'macgyverd'
+U 01-01 00:00:06.137 N boxinit     (init-1)                         : starting 'plf_updater'
+U 01-01 00:00:06.159 N boxinit     (init-1)                         : starting 'siciliad'
+U 01-01 00:00:06.162 N boxinit     (init-1)                         : starting 'telemetryd'
+U 01-01 00:00:06.257 N boxinit     (init-1)                         : process 'eeprom_ov16825', pid 102 exited
+U 01-01 00:00:06.259 N boxinit     (init-1)                         : process 'tsl2591_drv', pid 119 exited
+U 01-01 00:00:06.271 N boxinit     (init-1)                         : process 'inetd_rel', pid 113 exited
+U 01-01 00:00:06.272 N boxinit     (init-1)                         : starting 'palermo'
+U 01-01 00:00:06.276 N boxinit     (init-1)                         : starting 'ncp5623c_drv'
+U 01-01 00:00:06.301 N boxinit     (init-1)                         : process 'config_cgroups', pid 77 exited
+U 01-01 00:00:06.303 I inetd       (inetd-132)                      : redirecting syslog to ulog
+U 01-01 00:00:06.366 I libHAL      (sensors_main-123/thread_main-135): HAL_safe_strcpy: N:30, Src: '/dev/i2c-akm8963'
+U 01-01 00:00:06.366 I libHAL      (sensors_main-123/thread_main-135): HAL_safe_strcpy: N:30, Src: 'ak8963'
+U 01-01 00:00:06.366 I libHAL      (sensors_main-123/thread_main-135): HAL_safe_strcpy: N:30, Src: '/dev/i2c-mpu6050'
+U 01-01 00:00:06.366 I libHAL      (sensors_main-123/thread_main-135): HAL_safe_strcpy: N:30, Src: 'mpu6050'
+U 01-01 00:00:06.369 I libHAL      (sensors_main-123/thread_main-135): HAL_safe_strcpy: N:17, Src: '/dev/i2c-akm8963'
+U 01-01 00:00:06.369 I libHAL      (sensors_main-123/thread_main-135): HAL_safe_strcpy: N:17, Src: '/dev/i2c-mpu6050'
+U 01-01 00:00:06.369 I HAL         (sensors_main-123/thread_main-135): /dev/i2c-akm8963
+U 01-01 00:00:06.369 I HAL         (sensors_main-123/thread_main-135): /dev/i2c-mpu6050
+U 01-01 00:00:06.371 I libHAL      (sensors_main-123/thread_main-135): HAL_ak8963_start: ASA X=164, Y=164, Z=157
+U 01-01 00:00:06.371 I libHAL      (sensors_main-123/thread_main-135): HAL_ak8963_start: Scale raw->mG X=1.710241148, Y=1.710241148, Z=1.669242216
+U 01-01 00:00:06.375 I colibry     (sensors_main-123/thread_main-135): adcFs=50.0 -- adcTs=0.020
+U 01-01 00:00:06.376 I colibry     (sensors_main-123/thread_main-135): fifo size = 20
+U 01-01 00:00:06.379 I telemetryd  (telemetryd-129)                 : Creating daemon with rate 1000 ms
+U 01-01 00:00:06.379 I libtelemetry(telemetryd-129)                 : clear logger filter
+U 01-01 00:00:06.381 I telemetryd  (telemetryd-129)                 : Loading plugins from '/usr/lib/tlm-plugins'
+U 01-01 00:00:06.397 I macgyver    (macgyverd-126)                  : main: start macgyver 4.0 in 'non anonymous' 'doublon non filtering' 'full backtrace' mode
+U 01-01 00:00:06.406 N boxinit     (init-1)                         : process 'ncp5623c_drv', pid 134 exited
+U 01-01 00:00:06.407 N boxinit     (init-1)                         : starting 'pca9633_drv'
+U 01-01 00:00:06.416 E siciliad    (siciliad-128)                   : Failed to open '/dev/irradiance_red/trigger'
+U 01-01 00:00:06.416 E siciliad    (siciliad-128)                   : Failed to open '/dev/irradiance_green/trigger'
+U 01-01 00:00:06.416 E siciliad    (siciliad-128)                   : Failed to open '/dev/irradiance_blue/trigger'
+U 01-01 00:00:06.423 I colibry     (sensors_main-123/thread_main-135): Read Magneto Calibration File Ok (/data/Main_magneto_calibration.conf)
+U 01-01 00:00:06.423 I colibry     (sensors_main-123/thread_main-135): bias x : -285.843201 --- bias y : -183.319839 --- bias z : -260.354675 --- rayon : 301.207825
+U 01-01 00:00:06.424 I colibry     (sensors_main-123/thread_main-135): [ESTIMATOR] Start estimator state machine
+U 01-01 00:00:06.424 I colibry     (sensors_main-123/thread_main-135): Landed entry
+K 01-01 00:00:06.557 I KERNEL                                       : EXT4-fs (mmcblk0p6): recovery complete
+K 01-01 00:00:06.558 I KERNEL                                       : EXT4-fs (mmcblk0p6): mounted filesystem with writeback data mode. Opts: discard,data=writeback,nobarrier
+K 01-01 00:00:06.562 I KERNEL                                       : EXT4-fs (mmcblk0p7): barriers disabled
+K 01-01 00:00:06.565 I KERNEL                                       : EXT4-fs (mmcblk0p7): recovery complete
+K 01-01 00:00:06.565 I KERNEL                                       : EXT4-fs (mmcblk0p7): mounted filesystem with writeback data mode. Opts: discard,data=writeback,nobarrier
+K 01-01 00:00:06.570 I KERNEL                                       : EXT4-fs (mmcblk0p5): mounted filesystem with ordered data mode. Opts: (null)
+K 01-01 00:00:07.026 I KERNEL                                       : udev[82]: starting version 164
+K 01-01 00:00:07.319 I KERNEL                                       : Loading modules backported from Linux version R8.5-0-gcb51164
+K 01-01 00:00:07.319 I KERNEL                                       : Backport generated by backports.git R8.4-0-g0d46f43
+K 01-01 00:00:07.631 W KERNEL                                       : tsl2591: module is from the staging directory, the quality is unknown, you have been warned.
+K 01-01 00:00:07.675 I KERNEL                                       : cfg80211: Calling CRDA to update world regulatory domain
+K 01-01 00:00:08.171 I KERNEL                                       : usbcore: registered new interface driver sicilia-irradiance
+K 01-01 00:00:08.675 I KERNEL                                       : wlcore: wl18xx HW: 183x or 180x, PG 2.2 (ROM 0x11)
+K 01-01 00:00:08.705 I KERNEL                                       : wlcore: loaded
+K 01-01 00:00:08.705 I KERNEL                                       : wlcore: driver version: 
+K 01-01 00:00:08.705 I KERNEL                                       : wlcore: compilation time: Wed Nov  7 16:55:49 2018
+K 01-01 00:00:09.078 E KERNEL                                       : android_usb: already disabled
+K 01-01 00:00:10.105 E KERNEL                                       : android_usb: already disabled
+K 01-01 00:00:10.107 I KERNEL                                       : mtp_bind_config
+K 01-01 00:00:10.108 I KERNEL                                       : rndis_function_bind_config MAC: 00:00:00:00:00:00
+K 01-01 00:00:10.108 W KERNEL                                       :  gadget: using random self ethernet address
+K 01-01 00:00:10.109 W KERNEL                                       :  gadget: using random host ethernet address
+K 01-01 00:00:10.111 I KERNEL                                       : rndis0: MAC c6:95:9b:2b:3a:46
+K 01-01 00:00:10.111 I KERNEL                                       : rndis0: HOST MAC 92:fa:77:f3:f3:57
+K 01-01 00:00:10.226 I KERNEL                                       : android_work: did not send uevent (0 0   (null))
+K 01-01 00:00:10.311 I KERNEL                                       : android_work: sent uevent USB_STATE=CONNECTED
+K 01-01 00:00:10.358 I KERNEL                                       : ADDRCONF(NETDEV_UP): rndis0: link is not ready
+K 01-01 00:00:10.418 I KERNEL                                       :  gadget: high-speed config #1: android
+K 01-01 00:00:10.422 I KERNEL                                       : ADDRCONF(NETDEV_CHANGE): rndis0: link becomes ready
+K 01-01 00:00:10.423 I KERNEL                                       : android_work: sent uevent USB_STATE=CONFIGURED
+K 01-01 00:00:15.432 I KERNEL                                       : mtp_open
+K 01-01 00:00:19.159 I KERNEL                                       : wlcore: PHY firmware version: Rev 8.2.0.0.224
+K 01-01 00:00:19.271 I KERNEL                                       : wlcore: firmware booted (Rev 8.9.0.0.31)
+K 01-01 00:00:19.318 I KERNEL                                       : ADDRCONF(NETDEV_UP): wlan0: link is not ready
+K 01-01 00:00:20.683 D KERNEL                                       : rndis0: no IPv6 routers present
+K 01-01 00:00:20.688 I KERNEL                                       : wlcore: down
+K 01-01 00:00:20.753 I KERNEL                                       : cfg80211: Calling CRDA to update world regulatory domain
+K 01-01 00:00:21.942 I KERNEL                                       : ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+K 01-01 00:00:32.043 D KERNEL                                       : wlan0: no IPv6 routers present
+K 01-01 00:03:29.782 I KERNEL                                       : Powering on maincam
+K 01-01 00:03:29.903 W KERNEL                                       : Could not configure maincam VCM. You probably need a hardware patch
+K 01-01 00:03:29.972 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [eca3: -121]
+K 01-01 00:03:29.972 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [f278: -121]
+K 01-01 00:03:29.972 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [dc51: -121]
+K 01-01 00:03:29.972 E KERNEL                                       : ov16825 2-0036: VCM I2C write failed [0dcc: -121]
+K 01-01 00:03:32.426 I KERNEL                                       : Powering off maincam
+U 01-01 00:00:06.424 I colibry     (sensors_main-123/thread_main-135): [CONTROLLER] Start control state machine
+U 01-01 00:00:06.427 I libshdata   (sensors_main-123/thread_main-135): Writing a new header into memory section
+U 01-01 00:00:06.427 I libshdata   (sensors_main-123/thread_main-135): Writing a new metadata header into memory section
+U 01-01 00:00:06.428 I libshdata   (sensors_main-123/thread_main-135): Memory section "colibry_sensors_Main" successfully created with revision number : 2
+U 01-01 00:00:06.428 I libshdata   (sensors_main-123/thread_main-135): Writing a new header into memory section
+U 01-01 00:00:06.428 I libshdata   (sensors_main-123/thread_main-135): Writing a new metadata header into memory section
+U 01-01 00:00:06.432 I libshdata   (sensors_main-123/thread_main-135): Memory section "rawdata_Main" successfully created with revision number : 2
+U 01-01 00:00:06.432 I sensors     (sensors_main-123/thread_main-135): [SERVER_POMP] Starting server_pomp thread ...
+U 01-01 00:00:06.435 I sensors     (sensors_main-123/thread_main-135): [SERVER_POMP] pomp server started
+U 01-01 00:00:06.436 W pomp        (sensors_main-123/thread_main-135): fd 17 not found in loop 0x76a07ee0
+U 01-01 00:00:06.436 W pomp        (sensors_main-123/server_pomp-139): fd 17 (0x76a082a0) already in loop 0x76a07ee0
+U 01-01 00:00:06.436 I led_client  (sensors_main-123/thread_main-135): LED client connecting...
+U 01-01 00:00:06.436 E pomp        (sensors_main-123/thread_main-135): write(fd=17) err=9(Bad file descriptor)
+U 01-01 00:00:06.461 I siciliad    (siciliad-128)                   : Set P7 watchdog to [ 80°C - 85°C ]
+U 01-01 00:00:06.461 I siciliad    (siciliad-128)                   : Set P7MU watchdog to [ 80°C - 85°C ]
+U 01-01 00:00:06.461 I siciliad    (siciliad-128)                   : Set DDR watchdog to [ 90°C - 95°C ]
+U 01-01 00:00:06.461 I siciliad    (siciliad-128)                   : Set WIFI watchdog to [ 80°C - 85°C ]
+U 01-01 00:00:06.461 I telemetryd  (telemetryd-129)                 : Loading '/usr/lib/tlm-plugins/tlm-blackbox.so'
+U 01-01 00:00:06.467 I libshdata   (siciliad-128)                   : Writing a new header into memory section
+U 01-01 00:00:06.467 I libshdata   (siciliad-128)                   : Writing a new metadata header into memory section
+U 01-01 00:00:06.467 I libshdata   (siciliad-128)                   : Memory section "Temperature" successfully created with revision number : 2
+U 01-01 00:00:06.473 I pomp_comm_c (siciliad-128)                   : pomp client started
+U 01-01 00:00:06.482 I libshdata   (sensors_main-123/thread_main-135): Writing a new header into memory section
+U 01-01 00:00:06.482 I libshdata   (sensors_main-123/thread_main-135): Writing a new metadata header into memory section
+U 01-01 00:00:06.483 I libshdata   (sensors_main-123/thread_main-135): Memory section "IMU_heat_percent" successfully created with revision number : 2
+U 01-01 00:00:06.483 E sensors     (sensors_main-123/thread_main-135): producer registered ok : 'IMU_heat_percent'
+U 01-01 00:00:06.483 E sensors     (sensors_main-123/thread_main-135): consumer registered ok : 'IMU_heat_percent'
+U 01-01 00:00:06.490 W libHAL      (sensors_main-123/thread_main-135): HAL_mpu6050_fifo_count_data_format: WARNING; ffc=1024 >= 240 x 2 we may be desynchronised
+U 01-01 00:00:06.490 I sensors     (sensors_main-123/thread_main-135): COLIBRY_EVENT_MSG_BATTERY_NEW_PCT (datasize: 4 => 0)
+U 01-01 00:00:06.490 I sensors     (sensors_main-123/thread_main-135): COLIBRY_EVENT_NEW_ALERTSTATE (datasize: 4 => 2)
+U 01-01 00:00:06.493 I libshdata   (sensors_main-123/thread_main-135): Memory section "Temperature" successfully open with revision number : 2
+U 01-01 00:00:06.493 W sensors     (sensors_main-123/thread_main-135): Telemetry failed to get sample for 'heater_val' and/or 'Temperature' : time = 6483518 
+U 01-01 00:00:06.498 W sensors     (sensors_main-123/thread_main-135): Telemetry failed to get sample for 'heater_val' and/or 'Temperature' : time = 6496920 
+U 01-01 00:00:06.498 I macgyver    (macgyverd-126)                  : scan_reports: 0 report(s) scanned!
+U 01-01 00:00:06.523 W sensors     (sensors_main-123/thread_main-135): Telemetry failed to get sample for 'heater_val' and/or 'Temperature' : time = 6516663 
+U 01-01 00:00:06.533 I tlmblackbox (telemetryd-129)                 : setEnabled 0
+U 01-01 00:00:06.533 I tlmblackbox (telemetryd-129)                 : setCompressed 1
+U 01-01 00:00:06.533 I tlmblackbox (telemetryd-129)                 : setCompressionLevel 6
+U 01-01 00:00:06.540 N boxinit     (init-1)                         : process 'pca9633_drv', pid 138 exited
+U 01-01 00:00:06.543 W sensors     (sensors_main-123/thread_main-135): Telemetry failed to get sample for 'heater_val' and/or 'Temperature' : time = 6536621 
+U 01-01 00:00:06.544 I tlmblackbox (telemetryd-129)                 : setCompressionMethod zlib
+U 01-01 00:00:06.544 I tlmblackbox (telemetryd-129)                 : setLogDir '/data/blackbox'
+U 01-01 00:00:06.544 I tlmblackbox (telemetryd-129)                 : setLogName 'sequoia_param.dat'
+U 01-01 00:00:06.544 N boxinit     (init-1)                         : starting 'irradiance_drv'
+U 01-01 00:00:06.545 I tlmblackbox (telemetryd-129)                 : setLogCount 4
+U 01-01 00:00:06.548 I tlmblackbox (telemetryd-129)                 : setFilter *
+U 01-01 00:00:06.548 I libtelemetry(telemetryd-129)                 : clear logger filter
+U 01-01 00:00:06.549 I tlmblackbox (telemetryd-129)                 : setFlushPeriod 10000 ms
+U 01-01 00:00:06.549 I tlmblackbox (telemetryd-129)                 : setMaxSize -1 bytes
+U 01-01 00:00:06.550 I telemetryd  (telemetryd-129)                 : Entering loop
+U 01-01 00:00:06.643 I PlfUpdater  (plf_updater-127)                : Watching /proc/mounts
+U 01-01 00:00:06.673 I pomp_comm_c (civetitf-125)                   : pomp client started
+U 01-01 00:00:06.708 I pomp_comm_c (civetitf-125)                   : pomp client started
+U 01-01 00:00:06.740 N boxinit     (init-1)                         : process 'irradiance_drv', pid 141 exited
+U 01-01 00:00:06.762 I led_client  (palermo-133/MainLoop-199)       : LED client connecting...
+U 01-01 00:00:06.820 N boxinit     (init-1)                         : process 'probe_wifi', pid 99 exited
+U 01-01 00:00:06.822 N boxinit     (init-1)                         : starting 'wifi_timeout'
+U 01-01 00:00:06.826 I colibry     (sensors_main-123/thread_main-135): bias file saved: '/data/Main_static_bias.conf'
+U 01-01 00:00:06.843 I sensors     (sensors_main-123/thread_main-135): COLIBRY_EVENT_MSG_INIT_END (datasize: 0)
+U 01-01 00:00:06.843 E pomp        (sensors_main-123/thread_main-135): write(fd=17) err=22(Invalid argument)
+U 01-01 00:00:06.851 I colibry     (sensors_main-123/thread_main-135): heading locked to magneto
+U 01-01 00:00:06.874 I LIBIMAG_MAIN(palermo-133/MainLoop-206)       : Start consumer 1
+U 01-01 00:00:06.875 I LIBIMAG_MAIN(palermo-133/MainLoop-207)       : Start consumer 2
+U 01-01 00:00:06.947 N boxinit     (init-1)                         : process 'hostapd_cfg', pid 110 exited
+U 01-01 00:00:07.034 I LIBIMAG_MAIN(palermo-133/MainLoop-199)       : Get ION DMA buffer 0x6e716000 of size 23887872 (footprint=23887872)
+U 01-01 00:00:07.034 I LIBIMAG_2A  (palermo-133/MainLoop-199)       : Get P7_linearMalloc 0x6e716000 of size 23887872
+U 01-01 00:00:07.035 I IMAGING_P2A (palermo-133/MainLoop-199)       : EEPROM file scaleR: 472
+U 01-01 00:00:07.035 I IMAGING_P2A (palermo-133/MainLoop-199)       : EEPROM file scaleB: 420
+U 01-01 00:00:07.037 N Alpaga      (palermo-133/MainLoop-199)       : ### P3A Init ###
+U 01-01 00:00:07.061 N Alpaga      (palermo-133/MainLoop-199)       : File /etc/P3A_ctx_init.xml loaded
+U 01-01 00:00:07.062 I IMAGING_P2A (palermo-133/MainLoop-199)       : STATS 2A CROP: [ 256, 240]-[4351,3215]
+U 01-01 00:00:07.062 I IMAGING_P2A (palermo-133/MainLoop-199)       : 2A INPUT ROI: [ 256, 240]-[4351,3215]
+U 01-01 00:00:07.062 I LIBIMAG_MAIN(palermo-133/MainLoop-199)       : Starting each monocam separatly ...
+U 01-01 00:00:07.067 I libHAL      (palermo-133/MainLoop-199)       : [HAL_v4l2_utils->HAL_v4l2_utils_open_subdev():674] Found subdev /dev/v4l-subdev2 associated to dev /dev/video1
+U 01-01 00:00:07.553 I libshdata   (telemetryd-129)                 : Memory section "IMU_heat_percent" successfully open with revision number : 2
+U 01-01 00:00:07.554 I libshdata   (telemetryd-129)                 : Memory section "Temperature" successfully open with revision number : 2
+U 01-01 00:00:07.554 I libshdata   (telemetryd-129)                 : Memory section "rawdata_Main" successfully open with revision number : 2
+U 01-01 00:00:07.555 I libshdata   (telemetryd-129)                 : Memory section "colibry_sensors_Main" successfully open with revision number : 2
+U 01-01 00:00:07.556 N boxinit     (init-1)                         : starting 'switch_usb_prop'
+U 01-01 00:00:07.560 N boxinit     (init-1)                         : process 'usb_prop_set', pid 122 exited
+U 01-01 00:00:07.640 E boxinit     (init-1)                         : service 'mtp_server' has no pid
+U 01-01 00:00:07.640 E boxinit     (init-1)                         : service 'mtp_ptp_srv' has no pid
+U 01-01 00:00:07.641 E boxinit     (init-1)                         : service 'ptpip_server' has no pid
+U 01-01 00:00:07.641 E boxinit     (init-1)                         : service 'rndis_up' has no pid
+U 01-01 00:00:07.641 E boxinit     (init-1)                         : service 'dnsmasq_rndis0' has no pid
+U 01-01 00:00:08.065 I libHAL      (palermo-133/MainLoop-199)       : [HAL_v4l2_utils->HAL_v4l2_utils_open_subdev():674] Found subdev /dev/v4l-subdev3 associated to dev /dev/video2
+U 01-01 00:00:08.773 N boxinit     (init-1)                         : starting 'mtp_ptp_srv'
+U 01-01 00:00:08.776 N boxinit     (init-1)                         : starting 'ptpip_server'
+U 01-01 00:00:08.843 W             (ptpip_server-227/thread_main-229): can't enable SO_REUSEPORT on server socket (Protocol not available)
+U 01-01 00:00:08.844 I             (ptpip_server-227/ptp-ip_srv-230): PTPIP_server start listening
+U 01-01 00:00:08.847 N boxinit     (init-1)                         : starting 'rndis_up'
+U 01-01 00:00:08.850 N boxinit     (init-1)                         : starting 'dnsmasq_rndis0'
+U 01-01 00:00:08.928 N boxinit     (init-1)                         : process 'rndis_up', pid 231 exited
+U 01-01 00:00:08.930 I             (mtp-server-224)                 : [mtp-server][I] MTP server starting...
+U 01-01 00:00:08.991 N             (mtp-server-224/mtp-server-244)  : [mtp-server][N] Start thread : init_storage_thread
+U 01-01 00:00:08.992 I             (mtp-server-224/mtp-server-244)  : [mtp-server][I] add_removable_storage path: /data/medias name Internal -- ID=65537
+U 01-01 00:00:09.067 I libHAL      (palermo-133/MainLoop-199)       : [HAL_v4l2_utils->HAL_v4l2_utils_open_subdev():674] Found subdev /dev/v4l-subdev4 associated to dev /dev/video3
+U 01-01 00:00:09.944 N boxinit     (init-1)                         : process 'switch_usb_prop', pid 215 exited
+U 01-01 00:00:10.065 I libHAL      (palermo-133/MainLoop-199)       : [HAL_v4l2_utils->HAL_v4l2_utils_open_subdev():674] Found subdev /dev/v4l-subdev5 associated to dev /dev/video4
+U 01-01 00:00:11.063 I LIBIMAG_MAIN(palermo-133/MainLoop-199)       : Finish dummy start of monocams
+U 01-01 00:00:11.064 I LIBIMAG_FSM (palermo-133/MainLoop-250)       : State Changed: Stopped(1) -> Ready(2)
+U 01-01 00:00:11.071 I libshdata   (palermo-133/MainLoop-199)       : Writing a new header into memory section
+U 01-01 00:00:11.071 I libshdata   (palermo-133/MainLoop-199)       : Writing a new metadata header into memory section
+U 01-01 00:00:11.072 I libshdata   (palermo-133/MainLoop-199)       : Memory section "ExternalGPS" successfully created with revision number : 2
+U 01-01 00:00:11.074 I libshdata   (palermo-133/MainLoop-199)       : Writing a new header into memory section
+U 01-01 00:00:11.074 I libshdata   (palermo-133/MainLoop-199)       : Writing a new metadata header into memory section
+U 01-01 00:00:11.074 I libshdata   (palermo-133/MainLoop-199)       : Memory section "MonoCamsTemperature" successfully created with revision number : 2
+U 01-01 00:00:11.075 I libshdata   (palermo-133/MainLoop-199)       : Writing a new header into memory section
+U 01-01 00:00:11.075 I libshdata   (palermo-133/MainLoop-199)       : Writing a new metadata header into memory section
+U 01-01 00:00:11.075 I libshdata   (palermo-133/MainLoop-199)       : Memory section "Session" successfully created with revision number : 2
+U 01-01 00:00:11.085 I pomp_comm_s (palermo-133/MainLoop-199)       : pomp server started
+U 01-01 00:00:11.086 I PLRM_server (palermo-133/MainLoop-199)       : Add command interface 'inet:127.0.0.1:1111'
+U 01-01 00:00:11.087 I PLRM_sensors(palermo-133/MainLoop-199)       : Connect to body sensors @ inet:127.0.0.1:1010
+U 01-01 00:00:11.087 I sensors     (sensors_main-123/server_pomp-139): [SERVER_POMP] server_event_cb : event=0(CONNECTED) conn=0x76800758 msg=(nil)
+U 01-01 00:00:11.087 I sensors     (sensors_main-123/server_pomp-139): [SERVER_POMP] pomp client connected
+U 01-01 00:00:11.089 I PLRM_sensors(palermo-133/MainLoop-199)       : Connect to irradiance sensors @ inet:127.0.0.1:1020
+U 01-01 00:00:11.089 I LIBIMAG_MAIN(palermo-133/MainLoop-199)       : Set Main Cam resolution to 16Mp, ie 4608x3456
+U 01-01 00:00:11.089 I LIBIMAG_MAIN(palermo-133/MainLoop-199)       : MainCam enabled
+U 01-01 00:00:11.089 I IMAGING_P2A (palermo-133/MainLoop-199)       : set AE auto mode
+U 01-01 00:00:11.089 I IMAGING_P2A (palermo-133/MainLoop-199)       : set forced exposure time : 3000us
+U 01-01 00:00:11.089 I IMAGING_P2A (palermo-133/MainLoop-199)       : set forced gain : 1.000000
+U 01-01 00:00:11.089 I LIBIMAG_MAIN(palermo-133/MainLoop-199)       : Set Monos Cams resolution to 1.2Mp, ie 1280x960
+U 01-01 00:00:11.089 I LIBIMAG_MAIN(palermo-133/MainLoop-199)       : Set Monos Cams bit depth to 10b
+U 01-01 00:00:11.089 I LIBIMAG_MAIN(palermo-133/MainLoop-199)       : Monocam Green enabled
+U 01-01 00:00:11.089 I LIBIMAG_MAIN(palermo-133/MainLoop-199)       : Monocam Red enabled
+U 01-01 00:00:11.089 I LIBIMAG_MAIN(palermo-133/MainLoop-199)       : Monocam Red_edge enabled
+U 01-01 00:00:11.089 I LIBIMAG_MAIN(palermo-133/MainLoop-199)       : Monocam NIR enabled
+U 01-01 00:00:11.090 I PLRM_storage(palermo-133/MainLoop-199)       : Setting Autoselect_sdcard: disabled
+U 01-01 00:00:11.090 W Mt9m031     (palermo-133/MainLoop-199)       : Auto exposure can only modify exposure time
+U 01-01 00:00:11.090 W Mt9m031     (palermo-133/MainLoop-199)       : Auto exposure can only modify exposure time
+U 01-01 00:00:11.090 W Mt9m031     (palermo-133/MainLoop-199)       : Auto exposure can only modify exposure time
+U 01-01 00:00:11.090 W Mt9m031     (palermo-133/MainLoop-199)       : Auto exposure can only modify exposure time
+U 01-01 00:00:11.090 E Mt9m031     (palermo-133/MainLoop-199)       : Attempt to set unknown analog gain
+U 01-01 00:00:11.090 E Mt9m031     (palermo-133/MainLoop-199)       : Attempt to set unknown analog gain
+U 01-01 00:00:11.090 E Mt9m031     (palermo-133/MainLoop-199)       : Attempt to set unknown analog gain
+U 01-01 00:00:11.090 E Mt9m031     (palermo-133/MainLoop-199)       : Attempt to set unknown analog gain
+U 01-01 00:00:11.090 I LIBIMAG_MAIN(palermo-133/MainLoop-199)       : Set monocams auto-exposure on
+U 01-01 00:00:11.090 I PLRM_sensors(palermo-133/MainLoop-199)       : Enable sicilia GPS
+U 01-01 00:00:11.090 I PLRM_imaging(palermo-133/MainLoop-199)       : Set RGB vsync delay to 22300 µs
+U 01-01 00:00:11.090 I LIBIMAG_MAIN(palermo-133/MainLoop-199)       : Set Timelapse period=4000ms (=0.250000)
+U 01-01 00:00:11.092 I PLRM_storage(palermo-133/MainLoop-199)       : New internal storage 0x00010001: /data/medias, available=45889020kB used=10257712kB total_size=59151504kB writable=1
+U 01-01 00:00:11.093 I led_client  (palermo-133/MainLoop-199)       : LED client connecting...
+U 01-01 00:00:11.094 I PLRM_storage(palermo-133/MainLoop-199)       : udev monitor configured
+U 01-01 00:00:11.122 I PLRM_storage(palermo-133/MainLoop-199)       : Select path 0x00010001 '/data/medias'
+U 01-01 00:00:11.124 I PLRM_server (palermo-133/MainLoop-199)       : event_magneto_calibration_status: id=0 status=1
+U 01-01 00:00:11.124 I PLRM_server (palermo-133/MainLoop-199)       : event_imu_heating_status: id=0 status=0
+U 01-01 00:00:11.124 I PLRM_server (palermo-133/MainLoop-199)       : New status: 0x00001000
+U 01-01 00:00:11.556 I libshdata   (telemetryd-129)                 : Memory section "Session" successfully open with revision number : 2
+U 01-01 00:00:11.557 I libshdata   (telemetryd-129)                 : Memory section "MonoCamsTemperature" successfully open with revision number : 2
+U 01-01 00:00:11.557 I libshdata   (telemetryd-129)                 : Memory section "ExternalGPS" successfully open with revision number : 2
+U 01-01 00:00:12.562 I pomp_comm_c (siciliad-128)                   : pomp client connected
+U 01-01 00:00:12.562 I pomp_comm_s (palermo-133/MainLoop-199)       : pomp client connected
+U 01-01 00:00:12.562 I PLRM_server (palermo-133/MainLoop-199)       : new connection 0x76950e98...
+U 01-01 00:00:12.684 I pomp_comm_c (civetitf-125/client_pomp-196)   : pomp client connected
+U 01-01 00:00:12.685 I pomp_comm_s (palermo-133/MainLoop-199)       : pomp client connected
+U 01-01 00:00:12.685 I PLRM_server (palermo-133/MainLoop-199)       : new connection 0x7694e9b8...
+U 01-01 00:00:12.715 I pomp_comm_c (civetitf-125/civetitf-198)      : pomp client connected
+U 01-01 00:00:12.715 I pomp_comm_s (palermo-133/MainLoop-199)       : pomp client connected
+U 01-01 00:00:12.715 I PLRM_server (palermo-133/MainLoop-199)       : new connection 0x7694eb60...
+U 01-01 00:00:12.727 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_STATUS
+U 01-01 00:00:12.728 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_STATUS
+U 01-01 00:00:12.728 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:00:13.723 I             (mtp-server-224/mtp-server-244)  : [mtp-server][I] MTP server parse internal storage in 5s (DB: 1801 files)
+U 01-01 00:00:13.727 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_RESOLUTION
+U 01-01 00:00:13.728 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_RESOLUTION
+U 01-01 00:00:13.728 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:00:13.993 I             (mtp-server-224/mtp-server-251)  : [mtp-server][I] MTP socket server starting...
+U 01-01 00:00:13.996 I pomp_comm_c (mtp-server-224)                 : pomp client started
+U 01-01 00:00:13.996 I pomp_comm_s (palermo-133/MainLoop-199)       : pomp client connected
+U 01-01 00:00:13.996 I PLRM_server (palermo-133/MainLoop-199)       : new connection 0x7694ed08...
+U 01-01 00:00:13.997 I pomp_comm_c (mtp-server-224/client_pomp-252) : pomp client connected
+U 01-01 00:00:13.998 I led_client  (mtp-server-224)                 : LED client connecting...
+U 01-01 00:00:13.998 I             (mtp-server-224)                 : [mtp-server][I] MTP server took 5s to start (DB: 1801 files)
+U 01-01 00:00:14.728 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_RESOLUTION
+U 01-01 00:00:14.728 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_RESOLUTION
+U 01-01 00:00:14.728 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:00:15.728 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_BIT_DEPTH
+U 01-01 00:00:15.729 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_BIT_DEPTH
+U 01-01 00:00:15.729 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:00:15.730 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_ENABLED
+U 01-01 00:00:15.730 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_GET_SENSORS_ENABLED
+U 01-01 00:00:15.770 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:00:15.770 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_CAPTURE_GET_MODE
+U 01-01 00:00:15.771 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_CAPTURE_GET_MODE
+U 01-01 00:00:15.810 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:00:15.811 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_TIMELAPSE_GET_PARAM
+U 01-01 00:00:15.811 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_TIMELAPSE_GET_PARAM
+U 01-01 00:00:15.850 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:00:15.850 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_GPS_MODE_GET_PARAM
+U 01-01 00:00:15.851 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_GPS_MODE_GET_PARAM
+U 01-01 00:00:15.890 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:00:15.890 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_AUTO_MODE_GET_PARAM
+U 01-01 00:00:15.891 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_AUTO_MODE_GET_PARAM
+U 01-01 00:00:15.930 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:00:15.931 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:00:15.931 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:00:15.970 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:00:15.970 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_PATH
+U 01-01 00:00:15.971 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_PATH
+U 01-01 00:00:16.010 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:00:16.011 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_AUTOSELECT
+U 01-01 00:00:16.011 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_AUTOSELECT
+U 01-01 00:00:16.050 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:00:16.053 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_MAGNETO_CALIBRATION_STATUS
+U 01-01 00:00:16.054 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_MAGNETO_CALIBRATION_STATUS
+U 01-01 00:00:16.055 I PlfUpdater  (plf_updater-127)                : Event on /proc/mounts, removable will be checked, wait ...
+U 01-01 00:00:16.091 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:00:16.091 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_MAGNETO_CALIBRATION_STATUS
+U 01-01 00:00:16.092 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:00:16.092 E civetitf    (civetitf-125/civetitf-198)      : COMMAND 29 >> Invalid id
+U 01-01 00:00:16.093 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_SENSORS_GET_EXPOSURE_MODE
+U 01-01 00:00:16.094 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_SENSORS_GET_EXPOSURE_MODE
+U 01-01 00:00:16.130 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_SENSORS_GET_EXPOSURE_MODE
+U 01-01 00:00:16.130 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:00:16.131 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_SENSORS_GET_MANUAL_MODE_EXPOSURE
+U 01-01 00:00:16.131 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_SENSORS_GET_MANUAL_MODE_EXPOSURE
+U 01-01 00:00:16.170 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_SENSORS_GET_MANUAL_MODE_EXPOSURE
+U 01-01 00:00:16.170 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_SENSORS_GET_MANUAL_MODE_EXPOSURE
+U 01-01 00:00:16.170 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_SENSORS_GET_MANUAL_MODE_EXPOSURE
+U 01-01 00:00:16.170 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_SENSORS_GET_MANUAL_MODE_EXPOSURE
+U 01-01 00:00:16.170 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:00:16.171 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_SENSORS_GET_MANUAL_MODE_ISO
+U 01-01 00:00:16.171 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_SENSORS_GET_MANUAL_MODE_ISO
+U 01-01 00:00:16.210 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_SENSORS_GET_MANUAL_MODE_ISO
+U 01-01 00:00:16.210 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_SENSORS_GET_MANUAL_MODE_ISO
+U 01-01 00:00:16.210 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_SENSORS_GET_MANUAL_MODE_ISO
+U 01-01 00:00:16.210 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_SENSORS_GET_MANUAL_MODE_ISO
+U 01-01 00:00:16.210 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:00:16.211 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_GPS_GET_STATUS
+U 01-01 00:00:16.211 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:00:16.211 E civetitf    (civetitf-125/civetitf-198)      : COMMAND 40 >> No GPS available
+U 01-01 00:00:16.212 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_GPS_GET_STATUS
+U 01-01 00:00:16.212 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:00:16.212 E civetitf    (civetitf-125/civetitf-198)      : COMMAND 40 >> No GPS available
+U 01-01 00:00:16.724 I             (mtp-server-224/mtp-server-244)  : [mtp-server][I] MTP server parse removable storage in 0s (DB: 0 files)
+U 01-01 00:00:16.724 I             (mtp-server-224/mtp-server-244)  : [mtp-server][I] MTP server parse all storages in 5s (DB: 1801 files)
+U 01-01 00:00:16.724 N             (mtp-server-224/mtp-server-244)  : [mtp-server][N] Finish thread : init_storage_thread
+U 01-01 00:00:16.891 N boxinit     (init-1)                         : process 'wifi_timeout', pid 204 exited
+U 01-01 00:00:16.892 N boxinit     (init-1)                         : starting 'wifi_led_on'
+U 01-01 00:00:16.896 N boxinit     (init-1)                         : starting 'wl18xx_init'
+U 01-01 00:00:16.924 I led_client  (led-cli-254)                    : LED client connecting...
+U 01-01 00:00:16.927 E siciliad    (siciliad-128)                   : Failed to open '/dev/irradiance_red/trigger'
+U 01-01 00:00:16.927 E siciliad    (siciliad-128)                   : Failed to open '/dev/irradiance_green/trigger'
+U 01-01 00:00:16.927 E siciliad    (siciliad-128)                   : Failed to open '/dev/irradiance_blue/trigger'
+U 01-01 00:00:17.029 N boxinit     (init-1)                         : process 'wifi_led_on', pid 254 exited
+U 01-01 00:00:17.032 E boxinit     (init-1)                         : service 'dnsmasq_wlan0' has no pid
+U 01-01 00:00:17.967 N boxinit     (init-1)                         : starting 'dnsmasq_wlan0'
+U 01-01 00:00:18.025 N boxinit     (init-1)                         : starting 'hostapd_cfg'
+U 01-01 00:00:18.592 N boxinit     (init-1)                         : process 'hostapd_cfg', pid 270 exited
+U 01-01 00:00:19.110 N boxinit     (init-1)                         : process 'wl18xx_init', pid 255 exited
+U 01-01 00:00:19.112 N boxinit     (init-1)                         : starting 'hostapd_mgr'
+U 01-01 00:00:19.116 N boxinit     (init-1)                         : starting 'ntpd'
+U 01-01 00:00:21.056 I PlfUpdater  (plf_updater-127)                : Could not get mounted path, back to polling
+U 01-01 00:00:47.080 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_GPS_GET_STATUS
+U 01-01 00:00:47.081 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:00:47.081 E civetitf    (civetitf-125/civetitf-198)      : COMMAND 40 >> No GPS available
+U 01-01 00:00:47.089 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:00:47.090 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:00:47.130 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:00:47.131 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_PATH
+U 01-01 00:00:47.131 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_PATH
+U 01-01 00:00:47.170 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:00:47.171 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_AUTOSELECT
+U 01-01 00:00:47.171 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_AUTOSELECT
+U 01-01 00:00:47.210 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:00:47.210 I PlfUpdater  (plf_updater-127)                : Event on /proc/mounts, removable will be checked, wait ...
+U 01-01 00:00:47.231 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_GET_XMP_TAG
+U 01-01 00:00:47.232 I PLRM_server (palermo-133/MainLoop-199)       : Tag list: ''
+U 01-01 00:00:47.232 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_GET_XMP_TAG
+U 01-01 00:00:47.270 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:00:47.296 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:00:47.297 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:00:47.330 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:00:47.332 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_PATH
+U 01-01 00:00:47.333 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_PATH
+U 01-01 00:00:47.370 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:00:47.371 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_AUTOSELECT
+U 01-01 00:00:47.371 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_AUTOSELECT
+U 01-01 00:00:47.410 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:00:51.044 I civetitf    (civetitf-125/civetweb-worker-195): Delete all from /internal
+U 01-01 00:00:51.045 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0253
+U 01-01 00:00:51.084 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0260
+U 01-01 00:00:51.109 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0224
+U 01-01 00:00:51.136 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0182
+U 01-01 00:00:51.164 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0176
+U 01-01 00:00:51.187 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0200
+U 01-01 00:00:51.215 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0304
+U 01-01 00:00:51.247 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0216
+U 01-01 00:00:51.271 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0267
+U 01-01 00:00:51.321 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0183
+U 01-01 00:00:51.353 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0257
+U 01-01 00:00:51.380 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0262
+U 01-01 00:00:51.403 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0309
+U 01-01 00:00:51.445 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0277
+U 01-01 00:00:51.471 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0254
+U 01-01 00:00:51.509 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0281
+U 01-01 00:00:51.537 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0246
+U 01-01 00:00:51.561 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0196
+U 01-01 00:00:51.586 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0312
+U 01-01 00:00:51.718 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0210
+U 01-01 00:00:51.745 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0270
+U 01-01 00:00:51.887 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0266
+U 01-01 00:00:51.911 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0339
+U 01-01 00:00:51.938 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0308
+U 01-01 00:00:51.963 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0228
+U 01-01 00:00:51.986 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0245
+U 01-01 00:00:52.012 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0278
+U 01-01 00:00:52.034 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0342
+U 01-01 00:00:52.059 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0241
+U 01-01 00:00:52.086 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0287
+U 01-01 00:00:52.111 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0232
+U 01-01 00:00:52.135 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0293
+U 01-01 00:00:52.159 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0300
+U 01-01 00:00:52.183 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0186
+U 01-01 00:00:52.208 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0332
+U 01-01 00:00:52.212 I PlfUpdater  (plf_updater-127)                : Could not get mounted path, back to polling
+U 01-01 00:00:52.212 I PlfUpdater  (plf_updater-127)                : Event on /proc/mounts, removable will be checked, wait ...
+U 01-01 00:00:52.236 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0220
+U 01-01 00:00:52.259 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0212
+U 01-01 00:00:52.287 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0240
+U 01-01 00:00:52.320 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0297
+U 01-01 00:00:52.344 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0251
+U 01-01 00:00:52.385 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0279
+U 01-01 00:00:52.411 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0201
+U 01-01 00:00:52.465 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0283
+U 01-01 00:00:52.489 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0229
+U 01-01 00:00:52.523 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0273
+U 01-01 00:00:52.560 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0315
+U 01-01 00:00:52.602 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0234
+U 01-01 00:00:52.627 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0189
+U 01-01 00:00:52.654 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0286
+U 01-01 00:00:52.679 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0249
+U 01-01 00:00:52.708 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0294
+U 01-01 00:00:52.731 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0343
+U 01-01 00:00:52.756 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0291
+U 01-01 00:00:52.778 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0346
+U 01-01 00:00:52.802 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0185
+U 01-01 00:00:52.825 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0177
+U 01-01 00:00:52.849 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0239
+U 01-01 00:00:52.872 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0184
+U 01-01 00:00:52.895 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0344
+U 01-01 00:00:52.917 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0256
+U 01-01 00:00:52.941 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0207
+U 01-01 00:00:52.965 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0208
+U 01-01 00:00:52.987 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0258
+U 01-01 00:00:53.012 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0337
+U 01-01 00:00:53.035 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0199
+U 01-01 00:00:53.059 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0209
+U 01-01 00:00:53.082 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0227
+U 01-01 00:00:53.106 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0178
+U 01-01 00:00:53.129 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0347
+U 01-01 00:00:53.153 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0316
+U 01-01 00:00:53.177 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0187
+U 01-01 00:00:53.199 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0205
+U 01-01 00:00:53.224 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0193
+U 01-01 00:00:53.247 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0334
+U 01-01 00:00:53.274 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0317
+U 01-01 00:00:53.308 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0285
+U 01-01 00:00:53.340 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0268
+U 01-01 00:00:53.375 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0340
+U 01-01 00:00:53.407 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0259
+U 01-01 00:00:53.445 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0211
+U 01-01 00:00:53.488 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0236
+U 01-01 00:00:53.513 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0252
+U 01-01 00:00:53.546 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0325
+U 01-01 00:00:53.607 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0221
+U 01-01 00:00:53.636 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0341
+U 01-01 00:00:53.664 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0322
+U 01-01 00:00:53.699 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0314
+U 01-01 00:00:53.739 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0230
+U 01-01 00:00:53.766 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0321
+U 01-01 00:00:53.789 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0311
+U 01-01 00:00:53.813 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0248
+U 01-01 00:00:53.836 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0198
+U 01-01 00:00:53.861 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0263
+U 01-01 00:00:53.892 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0192
+U 01-01 00:00:53.917 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0243
+U 01-01 00:00:53.951 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0233
+U 01-01 00:00:53.975 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0333
+U 01-01 00:00:54.005 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0204
+U 01-01 00:00:54.038 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0323
+U 01-01 00:00:54.063 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0237
+U 01-01 00:00:54.086 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0272
+U 01-01 00:00:54.113 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0289
+U 01-01 00:00:54.142 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/external
+U 01-01 00:00:54.145 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0327
+U 01-01 00:00:54.174 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0280
+U 01-01 00:00:54.201 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0336
+U 01-01 00:00:54.226 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0223
+U 01-01 00:00:54.249 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0235
+U 01-01 00:00:54.271 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0195
+U 01-01 00:00:54.295 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0206
+U 01-01 00:00:54.327 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0318
+U 01-01 00:00:54.350 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0218
+U 01-01 00:00:54.377 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0191
+U 01-01 00:00:54.407 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0222
+U 01-01 00:00:54.431 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0335
+U 01-01 00:00:54.469 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0247
+U 01-01 00:00:54.493 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0244
+U 01-01 00:00:54.517 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0194
+U 01-01 00:00:54.551 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0338
+U 01-01 00:00:54.575 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0180
+U 01-01 00:00:54.603 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0330
+U 01-01 00:00:54.640 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0197
+U 01-01 00:00:54.664 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0188
+U 01-01 00:00:54.692 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0213
+U 01-01 00:00:54.719 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0271
+U 01-01 00:00:54.907 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0264
+U 01-01 00:00:54.941 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0320
+U 01-01 00:00:54.963 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0284
+U 01-01 00:00:54.998 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0181
+U 01-01 00:00:55.022 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0305
+U 01-01 00:00:55.053 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0276
+U 01-01 00:00:55.090 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0326
+U 01-01 00:00:55.113 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0202
+U 01-01 00:00:55.146 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0345
+U 01-01 00:00:55.171 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0302
+U 01-01 00:00:55.199 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0261
+U 01-01 00:00:55.222 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0331
+U 01-01 00:00:55.245 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0306
+U 01-01 00:00:55.270 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0296
+U 01-01 00:00:55.301 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0299
+U 01-01 00:00:55.323 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0255
+U 01-01 00:00:55.355 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0269
+U 01-01 00:00:55.378 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0324
+U 01-01 00:00:55.404 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0307
+U 01-01 00:00:55.440 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0242
+U 01-01 00:00:55.464 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0275
+U 01-01 00:00:55.493 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0290
+U 01-01 00:00:55.515 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0303
+U 01-01 00:00:55.542 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0250
+U 01-01 00:00:55.582 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0226
+U 01-01 00:00:55.605 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0215
+U 01-01 00:00:55.637 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0225
+U 01-01 00:00:55.670 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0319
+U 01-01 00:00:55.702 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0288
+U 01-01 00:00:55.739 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0310
+U 01-01 00:00:55.763 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0298
+U 01-01 00:00:55.795 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0219
+U 01-01 00:00:55.817 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0301
+U 01-01 00:00:55.840 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0203
+U 01-01 00:00:55.863 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0282
+U 01-01 00:00:55.885 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0295
+U 01-01 00:00:55.909 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0231
+U 01-01 00:00:55.932 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0328
+U 01-01 00:00:55.954 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0265
+U 01-01 00:00:55.976 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0214
+U 01-01 00:00:56.001 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0329
+U 01-01 00:00:56.023 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0313
+U 01-01 00:00:56.052 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0292
+U 01-01 00:00:56.076 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0190
+U 01-01 00:00:56.098 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0217
+U 01-01 00:00:56.121 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0179
+U 01-01 00:00:56.144 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0274
+U 01-01 00:00:56.166 I civetitf    (civetitf-125/civetweb-worker-195): Delete folder /internal/0238
+U 01-01 00:00:56.194 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:00:56.195 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:00:56.195 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:00:56.196 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_PATH
+U 01-01 00:00:56.197 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_PATH
+U 01-01 00:00:56.230 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:00:56.231 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_AUTOSELECT
+U 01-01 00:00:56.231 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_AUTOSELECT
+U 01-01 00:00:56.270 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:00:56.299 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:00:56.300 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:00:56.340 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:00:56.341 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_PATH
+U 01-01 00:00:56.341 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_PATH
+U 01-01 00:00:56.380 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:00:56.381 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_AUTOSELECT
+U 01-01 00:00:56.381 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_AUTOSELECT
+U 01-01 00:00:56.420 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:00:56.448 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:00:56.449 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_INFO
+U 01-01 00:00:56.480 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:00:56.481 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_PATH
+U 01-01 00:00:56.482 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_PATH
+U 01-01 00:00:56.520 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:00:56.522 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_AUTOSELECT
+U 01-01 00:00:56.523 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_STORAGE_GET_AUTOSELECT
+U 01-01 00:00:56.560 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:00:57.214 I PlfUpdater  (plf_updater-127)                : Could not get mounted path, back to polling
+U 01-01 00:00:57.214 I PlfUpdater  (plf_updater-127)                : Event on /proc/mounts, removable will be checked, wait ...
+U 01-01 00:01:02.215 I PlfUpdater  (plf_updater-127)                : Could not get mounted path, back to polling
+U 01-01 00:03:14.144 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_GPS_GET_STATUS
+U 01-01 00:03:14.145 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:03:14.145 E civetitf    (civetitf-125/civetitf-198)      : COMMAND 40 >> No GPS available
+U 01-01 00:03:14.165 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_GPS_GET_STATUS
+U 01-01 00:03:14.165 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:03:14.165 E civetitf    (civetitf-125/civetitf-198)      : COMMAND 40 >> No GPS available
+U 01-01 00:03:14.247 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_GET_XMP_TAG
+U 01-01 00:03:14.247 I PLRM_server (palermo-133/MainLoop-199)       : Tag list: ''
+U 01-01 00:03:14.248 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_CTRL_GET_XMP_TAG
+U 01-01 00:03:14.248 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:03:23.713 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_CAPTURE_START
+U 01-01 00:03:23.719 N boxinit     (init-1)                         : starting 'ulog_session'
+U 01-01 00:03:23.738 I PLRM_imaging(palermo-133/MainLoop-199)       : Set media path to '/data/medias/DCIM/0348'
+U 01-01 00:03:23.751 N LIBIMAG_MAIN(palermo-133/MainLoop-199)       : Computed random UUID seed 018961552A0457D85E3E9C050EACC7D9 (sequence id 0)
+U 01-01 00:03:23.751 I tlmblackbox (telemetryd-129)                 : setEnabled 0
+U 01-01 00:03:23.752 I sensors     (sensors_main-123/server_pomp-139): [SERVER_POMP] server_event_cb : event=2(MSG) conn=0x76800758 msg=0x768004f0
+U 01-01 00:03:23.752 I sensors     (sensors_main-123/server_pomp-139): [SERVER_POMP] HEATING_IMU_START (old f_heat_off: TRUE)
+U 01-01 00:03:23.752 E PLRM_sensors(palermo-133/MainLoop-199)       : Not connected to irradiance sensors
+U 01-01 00:03:23.789 I tlmblackbox (telemetryd-129)                 : setLogDir '/data/medias/DCIM/0348'
+U 01-01 00:03:23.802 I tlmblackbox (telemetryd-129)                 : setEnabled 1
+U 01-01 00:03:23.803 I tlmblackbox (telemetryd-129)                 : rotate logs: '/data/medias/DCIM/0348/sequoia_param.dat.3' -> '/data/medias/DCIM/0348/sequoia_param.dat.4'
+U 01-01 00:03:23.803 I tlmblackbox (telemetryd-129)                 : rotate logs: '/data/medias/DCIM/0348/sequoia_param.dat.2' -> '/data/medias/DCIM/0348/sequoia_param.dat.3'
+U 01-01 00:03:23.803 I tlmblackbox (telemetryd-129)                 : rotate logs: '/data/medias/DCIM/0348/sequoia_param.dat.1' -> '/data/medias/DCIM/0348/sequoia_param.dat.2'
+U 01-01 00:03:23.803 I tlmblackbox (telemetryd-129)                 : rotate logs: '/data/medias/DCIM/0348/sequoia_param.dat' -> '/data/medias/DCIM/0348/sequoia_param.dat.1'
+U 01-01 00:03:23.803 I tlmblackbox (telemetryd-129)                 : Creating file '/data/medias/DCIM/0348/sequoia_param.dat'
+U 01-01 00:03:26.602 N PLRM_imaging(palermo-133/MainLoop-199)       : ---------------------------------------------
+U 01-01 00:03:26.602 N PLRM_imaging(palermo-133/MainLoop-199)       : FW version = v1.7.1
+U 01-01 00:03:26.602 N PLRM_imaging(palermo-133/MainLoop-199)       : Camera S/N = PI040378AE7K007104
+U 01-01 00:03:26.602 N PLRM_imaging(palermo-133/MainLoop-199)       : Sunshine S/N = 
+U 01-01 00:03:26.602 N PLRM_imaging(palermo-133/MainLoop-199)       : FlightUUID = 68BBEA1566CC87E3D6A398F3AEAE4EDD
+U 01-01 00:03:26.602 N PLRM_imaging(palermo-133/MainLoop-199)       : ---------------------------------------------
+U 01-01 00:03:26.603 I LIBIMAG_FSM (palermo-133/Img_FSM-250)        : State Changed: Ready(2) -> SingleShot_Starting(3)
+U 01-01 00:03:26.603 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:03:26.604 I PLRM_server (palermo-133/MainLoop-199)       : event_imu_heating_status: id=0 status=1
+U 01-01 00:03:26.606 I pomp_comm_c (civetitf-125/client_pomp-196)   : client_generated_message_handler: received event SICILIA_ASYNC_EVT_IMU_HEATING_STATUS
+U 01-01 00:03:26.608 I pomp_comm_c (mtp-server-224/client_pomp-252) : client_generated_message_handler: received event SICILIA_ASYNC_EVT_IMU_HEATING_STATUS
+U 01-01 00:03:26.912 I pomp_comm_s (palermo-133/MainLoop-199)       : server_generated_message_handler: received event SICILIA_CTRL_CAPTURE_START
+U 01-01 00:03:26.913 I pomp_comm_c (civetitf-125/civetitf-198)      : client_generated_message_handler: received event SICILIA_ERROR
+U 01-01 00:03:26.913 E civetitf    (civetitf-125/civetitf-198)      : COMMAND 9 >> Busy
+U 01-01 00:03:27.229 I LIBPHOTO_R2R(palermo-133/Img_FSM-250)        : R2R: mmap buffer 0: 0x6c638000
+U 01-01 00:03:27.231 I LIBPHOTO_R2R(palermo-133/Img_FSM-250)        : R2R: mmap buffer 1: 0x6af70000
+U 01-01 00:03:27.232 I LIBPHOTO_R2R(palermo-133/Img_FSM-250)        : R2R: mmap buffer 2: 0x698a8000
+U 01-01 00:03:27.233 I LIBPHOTO_R2R(palermo-133/Img_FSM-250)        : R2R: mmap buffer 3: 0x681e0000
+U 01-01 00:03:27.238 I libHAL      (palermo-133/Img_FSM-250)        : [HAL_v4l2_utils->HAL_v4l2_utils_open_subdev():674] Found subdev /dev/v4l-subdev0 associated to dev /dev/video0
+U 01-01 00:03:28.081 I libHAL      (palermo-133/Img_FSM-250)        : [HAL_v4l2_utils->HAL_v4l2_utils_open_subdev():674] Found subdev /dev/v4l-subdev5 associated to dev /dev/video4
+U 01-01 00:03:28.148 I libHAL      (palermo-133/Img_FSM-250)        : [HAL_v4l2_utils->HAL_v4l2_utils_open_subdev():674] Found subdev /dev/v4l-subdev4 associated to dev /dev/video3
+U 01-01 00:03:28.214 I libHAL      (palermo-133/Img_FSM-250)        : [HAL_v4l2_utils->HAL_v4l2_utils_open_subdev():674] Found subdev /dev/v4l-subdev3 associated to dev /dev/video2
+U 01-01 00:03:28.277 I libHAL      (palermo-133/Img_FSM-250)        : [HAL_v4l2_utils->HAL_v4l2_utils_open_subdev():674] Found subdev /dev/v4l-subdev2 associated to dev /dev/video1
+U 01-01 00:03:28.344 W Mt9m031     (palermo-133/Img_FSM-250)        : Auto exposure can only modify exposure time
+U 01-01 00:03:28.344 W Mt9m031     (palermo-133/Img_FSM-250)        : Auto exposure can only modify exposure time
+U 01-01 00:03:28.344 W Mt9m031     (palermo-133/Img_FSM-250)        : Auto exposure can only modify exposure time
+U 01-01 00:03:28.344 W Mt9m031     (palermo-133/Img_FSM-250)        : Auto exposure can only modify exposure time
+U 01-01 00:03:28.344 E Mt9m031     (palermo-133/Img_FSM-250)        : Attempt to set unknown analog gain
+U 01-01 00:03:28.344 E Mt9m031     (palermo-133/Img_FSM-250)        : Attempt to set unknown analog gain
+U 01-01 00:03:28.344 E Mt9m031     (palermo-133/Img_FSM-250)        : Attempt to set unknown analog gain
+U 01-01 00:03:28.344 E Mt9m031     (palermo-133/Img_FSM-250)        : Attempt to set unknown analog gain
+U 01-01 00:03:28.348 I LIBCAM_V4L2 (palermo-133/Img_FSM-1971)       : Run cam /dev/video0 in multithreaded mode
+U 01-01 00:03:28.359 I pomp_comm_c (mtp-server-224/client_pomp-252) : client_generated_message_handler: received event SICILIA_ASYNC_EVT_CAPTURE_STATUS
+U 01-01 00:03:28.361 I PLRM_server (palermo-133/Img_FSM-250)        : New status: 0x00001001
+U 01-01 00:03:28.361 I pomp_comm_c (mtp-server-224/client_pomp-252) : client_generated_message_handler: received event SICILIA_ASYNC_EVT_STATUS
+U 01-01 00:03:28.362 I pomp_comm_c (civetitf-125/client_pomp-196)   : client_generated_message_handler: received event SICILIA_ASYNC_EVT_STATUS
+U 01-01 00:03:28.429 E civetitf    (civetitf-125/civetweb-worker-153): Getting path
+U 01-01 00:03:28.554 I LIBIMAG_MAIN(palermo-133/Img_MainCam-1971)   : PhotoSystemInternal::onStart
+U 01-01 00:03:28.555 I LIBIMAG_MAIN(palermo-133/Img_MainCam-1971)   : PhotoSystemInternal::onStart maincam capture
+U 01-01 00:03:28.560 I IMAGING_P2A (palermo-133/Img_2A-1983)        : STATS 2A CROP: [ 256, 240]-[4351,3215]
+U 01-01 00:03:28.560 I IMAGING_P2A (palermo-133/Img_2A-1983)        : 2A INPUT ROI: [ 256, 240]-[4351,3215]
+U 01-01 00:03:28.562 I LIBCAM_ISPP7(palermo-133/Img_2A-1983)        : *** Warning: stats window defined by driver is not as expected :
+U 01-01 00:03:28.562 I LIBCAM_ISPP7(palermo-133/Img_2A-1983)        :                     driver  != expected
+U 01-01 00:03:28.562 I LIBCAM_ISPP7(palermo-133/Img_2A-1983)        :         window_x : {0, 0}    {64, 0}
+U 01-01 00:03:28.562 I LIBCAM_ISPP7(palermo-133/Img_2A-1983)        :         window_y : {0, 0}    {62, 0}
+U 01-01 00:03:28.562 I LIBCAM_ISPP7(palermo-133/Img_2A-1983)        :     Do not overwrite it. 
+U 01-01 00:03:29.204 I LIBIMAG_MAIN(palermo-133/Img_MonoCams-1970)  : PhotoSystemInternal::onStart
+U 01-01 00:03:29.204 I LIBIMAG_MAIN(palermo-133/Img_MonoCams-1970)  : PhotoSystemInternal::onStart monocams capture
+U 01-01 00:03:29.205 I LIBIMAG_FSM (palermo-133/Img_FSM-250)        : State Changed: SingleShot_Starting(3) -> SingleShot_WaitingAE(4)
+U 01-01 00:03:29.872 I LIBIMAG_FSM (palermo-133/Img_FSM-250)        : TIMED EVENT (ticks=1)
+U 01-01 00:03:29.872 I LIBIMAG_FSM (palermo-133/Img_FSM-250)        : State Changed: SingleShot_WaitingAE(4) -> SingleShot_Taking(5)
+U 01-01 00:03:29.872 I pomp_comm_c (mtp-server-224/client_pomp-252) : client_generated_message_handler: received event SICILIA_ASYNC_EVT_CAPTURE_STATUS
+U 01-01 00:03:30.136 I LIBIMAG_FSM (palermo-133/Img_FSM-250)        : EX TIMED EVENT #0 (ticks=1)
+U 01-01 00:03:30.239 I LIBIMAG_FSM (palermo-133/Img_FSM-250)        : EX TIMED EVENT #2 (ticks=1)
+U 01-01 00:03:30.251 I LIBIMAG_FSM (palermo-133/Img_FSM-250)        : EX TIMED EVENT #2 (ticks=1)
+U 01-01 00:03:30.272 I LIBCAM_CAP  (palermo-133/Img_MonoCams-1970)  : closest true timestamp realtime 210.261285, realtime: 211.694623
+U 01-01 00:03:30.272 I PLRM_server (palermo-133/Img_MonoCams-1970)  : event_picture_time_status: 211.694623
+U 01-01 00:03:30.272 I pomp_comm_c (mtp-server-224/client_pomp-252) : client_generated_message_handler: received event SICILIA_ASYNC_EVT_PICTURE_TIME_STATUS
+U 01-01 00:03:30.274 I LIBIMAG_MAIN(palermo-133/Img_MonoCams-1970)  : PhotoSystem::onCaptureDone: seq=0  timestamp=210.261285  wallclock=211.694928 (/dev/video4 fps=30.013742)
+U 01-01 00:03:30.275 I LIBIMAG_MAIN(palermo-133/Img_MonoCams-1970)  : Frame pushed in workqueue 1, count=1
+U 01-01 00:03:30.275 I LIBIMAG_MAIN(palermo-133/Img_MonoCams-1970)  : PhotoSystem::onCaptureDone: seq=0  timestamp=210.261285  wallclock=211.697519 (/dev/video3 fps=30.013742)
+U 01-01 00:03:30.276 I LIBIMAG_MAIN(palermo-133/Img_MonoCams-1970)  : Frame pushed in workqueue 1, count=1
+U 01-01 00:03:30.276 I LIBIMAG_MAIN(palermo-133/Img_MonoCams-1970)  : PhotoSystem::onCaptureDone: seq=0  timestamp=210.261285  wallclock=211.700039 (/dev/video2 fps=30.013742)
+U 01-01 00:03:30.276 I LIBIMAG_MAIN(palermo-133/Img_MonoCams-1970)  : Frame pushed in workqueue 1, count=2
+U 01-01 00:03:30.276 I LIBIMAG_MAIN(palermo-133/Img_MonoCams-1970)  : PhotoSystem::onCaptureDone: seq=0  timestamp=210.261285  wallclock=211.702584 (/dev/video1 fps=30.013742)
+U 01-01 00:03:30.276 I LIBIMAG_MAIN(palermo-133/Img_MonoCams-1970)  : Frame pushed in workqueue 1, count=3
+U 01-01 00:03:30.328 I LIBIMAG_FSM (palermo-133/Img_FSM-250)        : EX TIMED EVENT #1 (ticks=1)
+U 01-01 00:03:30.328 I LIBIMAG_ISP (palermo-133/Img_MainCam-1971)   : ISPProcessing::onCaptureDone: seq=0  timestamp=210.326717  wallclock=211.760282 (/dev/video0 [0]  fps=6.000564)
+U 01-01 00:03:30.398 I LIBIMAG_ISP (palermo-133/Img_MainCam-1971)   : Image 0 process by ISP in 0.069115s
+U 01-01 00:03:30.398 I LIBIMAG_MAIN(palermo-133/Img_MainCam-1971)   : PhotoSystem::onCaptureDone: seq=0  timestamp=210.326717  wallclock=211.760282 (/dev/video0 fps=6.000564)
+U 01-01 00:03:30.398 I LIBIMAG_MAIN(palermo-133/Img_MainCam-1971)   : Frame pushed in workqueue 2, count=1
+U 01-01 00:03:30.398 I LIBIMAG_MAIN(palermo-133/Img_MainCam-1971)   : Capture #0 full completed
+U 01-01 00:03:30.399 I pomp_comm_c (mtp-server-224/client_pomp-252) : client_generated_message_handler: received event SICILIA_ASYNC_EVT_CAPTURE_STATUS
+U 01-01 00:03:30.400 I pomp_comm_c (mtp-server-224/client_pomp-252) : client_generated_message_handler: received event SICILIA_ASYNC_EVT_SNAPSHOT
+U 01-01 00:03:30.401 I LIBIMAG_FSM (palermo-133/Img_FSM-250)        : State Changed: SingleShot_Taking(5) -> SingleShot_Stopping(6)
+U 01-01 00:03:30.402 I pomp_comm_c (civetitf-125/client_pomp-196)   : client_generated_message_handler: received event SICILIA_ASYNC_EVT_SNAPSHOT
+U 01-01 00:03:30.470 E civetitf    (civetitf-125/civetweb-worker-149): Getting path
+U 01-01 00:03:30.728 I LIBIMAG_MAIN(palermo-133/Img_MonoCams-1970)  : PhotoSystemInternal::onStop
+U 01-01 00:03:30.761 I LIBIMAG_MAIN(palermo-133/Img_Writer1-206)    : PhotoSystem::frame_consumer[1]: timestamp=210.261285 (/dev/video4) delay=500ms
+U 01-01 00:03:30.761 E PLRM_imaging(palermo-133/Img_Writer1-206)    : Failed to get back gps data
+U 01-01 00:03:30.762 I libshdata   (palermo-133/Img_Writer1-206)    : Memory section "colibry_sensors_Main" successfully open with revision number : 2
+U 01-01 00:03:30.763 I PLRM_imaging(palermo-133/Img_Writer1-206)    : Body attitude datas (128.587250;4.165462;0.483458)
+U 01-01 00:03:30.763 N LIBIMAG_MAIN(palermo-133/Img_Writer1-206)    : Computed UUID BD94C6082250C128BE6BE9923ACF8EFA (sequence id 0)
+U 01-01 00:03:30.812 N LIBIMAG_MAIN(palermo-133/Img_Writer1-206)    : Wrote /data/medias/DCIM/0348/IMG_700101_000331_0000_NIR.TIF
+U 01-01 00:03:30.812 I LIBIMAG_MAIN(palermo-133/Img_Writer1-206)    : TIFF processed in 0.049243 seconds
+U 01-01 00:03:30.812 I PLRM_imaging(palermo-133/Img_Writer1-206)    : Photo Record Id = /data/medias/DCIM/0348/IMG_700101_000331_0000_NIR.TIF
+U 01-01 00:03:30.815 I LIBIMAG_MAIN(palermo-133/Img_Writer1-206)    : PhotoSystem::frame_consumer[1]: timestamp=210.261285 (/dev/video3) delay=554ms
+U 01-01 00:03:30.815 E PLRM_imaging(palermo-133/Img_Writer1-206)    : Failed to get back gps data
+U 01-01 00:03:30.815 I PLRM_imaging(palermo-133/Img_Writer1-206)    : Body attitude datas (128.587265;4.165423;0.483459)
+U 01-01 00:03:30.816 N LIBIMAG_MAIN(palermo-133/Img_Writer1-206)    : Computed UUID BD94C6082250C128BE6BE9923ACF8EFA (sequence id 0)
+U 01-01 00:03:30.821 W             (mtp-server-224)                 : [mtp-server][W] can't open : /data/medias/DCIM/0348/.thumb/IMG_700101_000331_0000_NIR.JPG
+U 01-01 00:03:30.826 I LIBIMAG_MAIN(palermo-133/Img_Writer2-207)    : PhotoSystem::frame_consumer[2]: timestamp=210.326717 (/dev/video0) delay=500ms
+U 01-01 00:03:30.827 E PLRM_imaging(palermo-133/Img_Writer2-207)    : Failed to get back gps data
+U 01-01 00:03:30.827 I PLRM_imaging(palermo-133/Img_Writer2-207)    : Body attitude datas (128.584381;4.171969;0.483274)
+U 01-01 00:03:30.828 I libshdata   (palermo-133/Img_Writer2-207)    : Memory section "rawdata_Main" successfully open with revision number : 2
+U 01-01 00:03:30.868 N LIBIMAG_MAIN(palermo-133/Img_Writer1-206)    : Wrote /data/medias/DCIM/0348/IMG_700101_000331_0000_REG.TIF
+U 01-01 00:03:30.869 I LIBIMAG_MAIN(palermo-133/Img_Writer1-206)    : TIFF processed in 0.052697 seconds
+U 01-01 00:03:30.869 I PLRM_imaging(palermo-133/Img_Writer1-206)    : Photo Record Id = /data/medias/DCIM/0348/IMG_700101_000331_0000_REG.TIF
+U 01-01 00:03:30.874 I LIBIMAG_MAIN(palermo-133/Img_Writer1-206)    : PhotoSystem::frame_consumer[1]: timestamp=210.261285 (/dev/video2) delay=613ms
+U 01-01 00:03:30.875 E PLRM_imaging(palermo-133/Img_Writer1-206)    : Failed to get back gps data
+U 01-01 00:03:30.875 I PLRM_imaging(palermo-133/Img_Writer1-206)    : Body attitude datas (128.587296;4.165384;0.483461)
+U 01-01 00:03:30.875 N LIBIMAG_MAIN(palermo-133/Img_Writer1-206)    : Computed UUID BD94C6082250C128BE6BE9923ACF8EFA (sequence id 0)
+U 01-01 00:03:30.877 W             (mtp-server-224)                 : [mtp-server][W] can't open : /data/medias/DCIM/0348/.thumb/IMG_700101_000331_0000_REG.JPG
+U 01-01 00:03:30.928 N LIBIMAG_MAIN(palermo-133/Img_Writer1-206)    : Wrote /data/medias/DCIM/0348/IMG_700101_000331_0000_RED.TIF
+U 01-01 00:03:30.928 I LIBIMAG_MAIN(palermo-133/Img_Writer1-206)    : TIFF processed in 0.052701 seconds
+U 01-01 00:03:30.928 I PLRM_imaging(palermo-133/Img_Writer1-206)    : Photo Record Id = /data/medias/DCIM/0348/IMG_700101_000331_0000_RED.TIF
+U 01-01 00:03:30.934 I LIBIMAG_MAIN(palermo-133/Img_Writer1-206)    : PhotoSystem::frame_consumer[1]: timestamp=210.261285 (/dev/video1) delay=673ms
+U 01-01 00:03:30.934 E PLRM_imaging(palermo-133/Img_Writer1-206)    : Failed to get back gps data
+U 01-01 00:03:30.934 I PLRM_imaging(palermo-133/Img_Writer1-206)    : Body attitude datas (128.587326;4.165321;0.483462)
+U 01-01 00:03:30.934 N LIBIMAG_MAIN(palermo-133/Img_Writer1-206)    : Computed UUID BD94C6082250C128BE6BE9923ACF8EFA (sequence id 0)
+U 01-01 00:03:30.937 W             (mtp-server-224)                 : [mtp-server][W] can't open : /data/medias/DCIM/0348/.thumb/IMG_700101_000331_0000_RED.JPG
+U 01-01 00:03:30.987 N LIBIMAG_MAIN(palermo-133/Img_Writer1-206)    : Wrote /data/medias/DCIM/0348/IMG_700101_000331_0000_GRE.TIF
+U 01-01 00:03:30.987 I LIBIMAG_MAIN(palermo-133/Img_Writer1-206)    : TIFF processed in 0.052594 seconds
+U 01-01 00:03:30.987 I PLRM_imaging(palermo-133/Img_Writer1-206)    : Photo Record Id = /data/medias/DCIM/0348/IMG_700101_000331_0000_GRE.TIF
+U 01-01 00:03:30.995 I LIBIMAG_MAIN(palermo-133/Img_MainCam-1971)   : PhotoSystemInternal::onStop
+U 01-01 00:03:30.995 I LIBIMAG_FSM (palermo-133/Img_FSM-250)        : State Changed: SingleShot_Stopping(6) -> SingleShot_Stopped(7)
+U 01-01 00:03:30.995 I LIBIMAG_MAIN(palermo-133/Img_FSM-250)        : check_capture_ended: not ready: pending=1 remain=1
+U 01-01 00:03:30.995 I LIBIMAG_MAIN(palermo-133/Img_FSM-250)        : | id=0 reqcount=5 succeed=5 failed=0 recorded=4
+U 01-01 00:03:30.998 W             (mtp-server-224)                 : [mtp-server][W] can't open : /data/medias/DCIM/0348/.thumb/IMG_700101_000331_0000_GRE.JPG
+U 01-01 00:03:31.253 I LIBPHOTO_JPG(palermo-133/Img_Writer2-207)    : [JPEGCreator::nv12compress] dt3=0.000002s dt4=0.399977s <avg dt3=0.000002s dt4=0.399977s>
+U 01-01 00:03:31.253 I LIBPHOTO_JPG(palermo-133/Img_Writer2-207)    : [JPEGCreator] Compression:0.400145s
+U 01-01 00:03:31.268 I LIBPHOTO_JPG(palermo-133/Img_Writer2-207)    : [JPEGCreator] Write:0.014245s
+U 01-01 00:03:31.268 N LIBIMAG_MAIN(palermo-133/Img_Writer2-207)    : Wrote /data/medias/DCIM/0348/IMG_700101_000331_0000_RGB.JPG
+U 01-01 00:03:31.268 I LIBIMAG_MAIN(palermo-133/Img_Writer2-207)    : JPEG processed in 0.419509 seconds
+U 01-01 00:03:31.268 I PLRM_imaging(palermo-133/Img_Writer2-207)    : Photo Record Id = /data/medias/DCIM/0348/IMG_700101_000331_0000_RGB.JPG
+U 01-01 00:03:31.271 I LIBIMAG_MAIN(palermo-133/Img_Writer2-207)    : Capture #0 completly recorded
+U 01-01 00:03:31.278 W             (mtp-server-224)                 : [mtp-server][W] can't open : /data/medias/DCIM/0348/.thumb/IMG_700101_000331_0000_RGB.JPG
+U 01-01 00:03:31.290 I LIBIMAG_MAIN(palermo-133/Img_Writer2-207)    : Sync file-system...
+U 01-01 00:03:31.578 I LIBIMAG_MAIN(palermo-133/Img_Writer2-207)    : Sync file-system done
+U 01-01 00:03:31.578 I PLRM_imaging(palermo-133/Img_Writer2-207)    : onRecordSessionDone
+U 01-01 00:03:31.578 I LIBIMAG_FSM (palermo-133/Img_FSM-250)        : State Changed: SingleShot_Stopped(7) -> Ready(2)
+U 01-01 00:03:31.579 E PLRM_sensors(palermo-133/Img_FSM-250)        : Not connected to irradiance sensors
+U 01-01 00:03:31.579 I sensors     (sensors_main-123/server_pomp-139): [SERVER_POMP] server_event_cb : event=2(MSG) conn=0x76800758 msg=0x768004f0
+U 01-01 00:03:31.579 I sensors     (sensors_main-123/server_pomp-139): [SERVER_POMP] HEATING_IMU_STOP (old f_heat_off: FALSE)
+U 01-01 00:03:31.580 I PLRM_server (palermo-133/MainLoop-199)       : event_imu_heating_status: id=0 status=0
+U 01-01 00:03:31.580 I pomp_comm_c (mtp-server-224/client_pomp-252) : client_generated_message_handler: received event SICILIA_ASYNC_EVT_IMU_HEATING_STATUS
+U 01-01 00:03:31.582 I pomp_comm_c (civetitf-125/client_pomp-196)   : client_generated_message_handler: received event SICILIA_ASYNC_EVT_IMU_HEATING_STATUS
+U 01-01 00:03:31.619 I tlmblackbox (telemetryd-129)                 : setEnabled 0
+U 01-01 00:03:31.628 I tlmblackbox (telemetryd-129)                 : Closing file '/data/medias/DCIM/0348/sequoia_param.dat'
+U 01-01 00:03:31.639 I tlmblackbox (telemetryd-129)                 : setLogDir '/data/blackbox'
+U 01-01 00:03:31.646 I tlmblackbox (telemetryd-129)                 : setEnabled 1
+U 01-01 00:03:31.646 I tlmblackbox (telemetryd-129)                 : rotate logs: '/data/blackbox/sequoia_param.dat.3' -> '/data/blackbox/sequoia_param.dat.4'
+U 01-01 00:03:31.648 I tlmblackbox (telemetryd-129)                 : rotate logs: '/data/blackbox/sequoia_param.dat.2' -> '/data/blackbox/sequoia_param.dat.3'
+U 01-01 00:03:31.649 I tlmblackbox (telemetryd-129)                 : rotate logs: '/data/blackbox/sequoia_param.dat.1' -> '/data/blackbox/sequoia_param.dat.2'
+U 01-01 00:03:31.649 I tlmblackbox (telemetryd-129)                 : rotate logs: '/data/blackbox/sequoia_param.dat' -> '/data/blackbox/sequoia_param.dat.1'
+U 01-01 00:03:31.649 I tlmblackbox (telemetryd-129)                 : Creating file '/data/blackbox/sequoia_param.dat'
+U 01-01 00:03:31.679 I PLRM_imaging(palermo-133/Img_FSM-250)        : -------------------------------------------------------------------------------------------------------------------------------

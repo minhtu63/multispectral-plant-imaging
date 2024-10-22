@@ -1,0 +1,89 @@
+
+
+Wed Oct  9 14:44:10 2024
+Command line: TestDisk
+
+TestDisk 7.0, Data Recovery Utility, April 2015
+Christophe GRENIER <grenier@cgsecurity.org>
+http://www.cgsecurity.org
+OS: Linux, kernel 4.9.337-tegra (#1 SMP PREEMPT Tue Jun 11 16:07:05 PDT 2024) aarch64
+Compiler: GCC 7.2
+ext2fs lib: 1.44.1, ntfs lib: libntfs-3g, reiserfs lib: none, ewf lib: none, curses lib: ncurses 6.0
+Warning: can't get size for Disk /dev/mapper/control - 0 B - 0 sectors, sector size=512
+Hard disk list
+Disk /dev/mmcblk0 - 63 GB / 59 GiB - CHS 1948992 4 16, sector size=512
+
+Partition table type (auto): EFI GPT
+Disk /dev/mmcblk0 - 63 GB / 59 GiB
+Partition table type: EFI GPT
+
+Analyse Disk /dev/mmcblk0 - 63 GB / 59 GiB - CHS 1948992 4 16
+hdr_size=92
+hdr_lba_self=1
+hdr_lba_alt=124735487 (expected 124735487)
+hdr_lba_start=34
+hdr_lba_end=124735454
+hdr_lba_table=2
+hdr_entries=128
+hdr_entsz=128
+Current partition structure:
+ 1 P Unknown                    28672  124733439  124704768 [APP]
+ 2 P Unknown                     2048       2303        256 [TBC]
+ 3 P Unknown                     4096       4991        896 [RP1]
+ 4 P Unknown                     6144       7295       1152 [EBT]
+ 5 P Unknown                     8192       8319        128 [WB0]
+ 6 P Unknown                    10240      10623        384 [BPF]
+ 7 P Unknown                    12288      13055        768 [BPF-DTB]
+ 8 P Unknown                    14336      14463        128 [FX]
+ 9 P Unknown                    16384      17279        896 [TOS]
+10 P Unknown                    18432      19327        896 [DTB]
+11 P Unknown                    20480      22015       1536 [LNX]
+12 P Unknown                    22528      22655        128 [EKS]
+13 P Unknown                    24576      24959        384 [BMP]
+14 P Unknown                    26624      26879        256 [RP4]
+
+search_part()
+Disk /dev/mmcblk0 - 63 GB / 59 GiB - CHS 1948992 4 16
+
+recover_EXT2: s_block_group_nr=0/475, s_mnt_count=179/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 15588096
+recover_EXT2: part_size 124704768
+     MS Data                    28672  124733439  124704768
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 63 GB / 59 GiB
+
+Results
+   P MS Data                    28672  124733439  124704768
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 63 GB / 59 GiB
+
+Hint for advanced users. dmsetup may be used if you prefer to avoid to rewrite the partition table for the moment:
+echo "0 124704768 linear /dev/mmcblk0 28672" | dmsetup create test0
+
+interface_write()
+ 1 P MS Data                    28672  124733439  124704768
+simulate write!
+
+Interface Advanced
+hdr_size=92
+hdr_lba_self=1
+hdr_lba_alt=124735487 (expected 124735487)
+hdr_lba_start=34
+hdr_lba_end=124735454
+hdr_lba_table=2
+hdr_entries=128
+hdr_entsz=128
+ 2 P Unknown                     2048       2303        256 [TBC]
+ 3 P Unknown                     4096       4991        896 [RP1]
+ 4 P Unknown                     6144       7295       1152 [EBT]
+ 5 P Unknown                     8192       8319        128 [WB0]
+ 6 P Unknown                    10240      10623        384 [BPF]
+ 7 P Unknown                    12288      13055        768 [BPF-DTB]
+ 8 P Unknown                    14336      14463        128 [FX]
+ 9 P Unknown                    16384      17279        896 [TOS]
+10 P Unknown                    18432      19327        896 [DTB]
+11 P Unknown                    20480      22015       1536 [LNX]
+12 P Unknown                    22528      22655        128 [EKS]
+13 P Unknown                    24576      24959        384 [BMP]
+14 P Unknown                    26624      26879        256 [RP4]
+ 1 P Unknown                    28672  124733439  124704768 [APP]
+SIGHUP detected! TestDisk has been killed.
